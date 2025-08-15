@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: 'Advancing artificial intelligence through cutting-edge research, innovative models, and responsible development for a better future.',
   keywords: 'AI, artificial intelligence, machine learning, research, models, API',
   authors: [{ name: 'TNSA AI' }],
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: 'TNSA AI - Advancing Artificial Intelligence',
     description: 'Advancing artificial intelligence through cutting-edge research, innovative models, and responsible development for a better future.',
