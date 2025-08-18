@@ -33,7 +33,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Our Story</h2>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p>
-                TNSA AI was founded in 2021 by Thishyaketh Abimalla & Nachiketh Abimalla(Who Built one of the Best Generaion Algorithm for TNSA named AutoPA) with a bold mission — to make India the global leader in Artificial Intelligence and pioneer the world's first AGI and Quantum Intelligence systems. Built without reliance on foreign core technology, TNSA develops foundational models, multimodal systems, and advanced AI frameworks.
+                TNSA AI was founded in 2021 by Thishyaketh Abimalla & Nachiketh Abimalla(Who Built one of the Best Generation Algorithm for TNSA named AutoPA) with a bold mission — to make India the global leader in Artificial Intelligence and pioneer the world's first AGI and Quantum Intelligence systems. Built without reliance on foreign core technology, TNSA develops foundational models, multimodal systems, and advanced AI frameworks.
               </p>
               <p>
                 What began as an independent research initiative, supported by family and later by Microsoft for Startups and Google TPU Research Cloud, has evolved into a global AI company. Our portfolio includes:
