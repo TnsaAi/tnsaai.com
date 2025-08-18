@@ -308,6 +308,44 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Collaborations Section */}
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">
+              Our Partners
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
+              TNSA is excited to announce its collaboration with Microsoft for Startups and our acceptance into the Google TPU Research Cloud program, providing us with resources to accelerate our AI research.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-8 sm:gap-x-16">
+              <Image
+                src="/ms_startups.png"
+                alt="Microsoft for Startups Logo"
+                width={400}
+                height={160}
+                className="object-contain"
+              />
+              <Image
+                src="/google_trc.png"
+                alt="Google TPU Research Cloud Logo"
+                width={200}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+            <div className="mt-16">
+              <Link
+                href="/company/news/tnsa-x-microsoft-for-startups-tnsa-x-google-tpu-research-cloud"
+                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              >
+                Read the Announcement →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Latest Updates Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
