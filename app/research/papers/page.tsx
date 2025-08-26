@@ -46,6 +46,12 @@ const papers = [
     href: '/papers/quantum-intelligence-and-future-ai-systems',
     pdfUrl: '/Quantum_Intelligence_and_Future_AI_Systems.pdf',
   },
+  {
+    title: 'A Guide to Build Agents with NGen and MCP',
+    description: 'A practical guide to building agents using NGen and the Model Context Protocol (MCP).',
+    href: '/papers/a-guide-to-build-agents-with-ngen-and-mcp',
+    pdfUrl: '/A%20Guide%20to%20Build%20Agents%20with%20NGen%20and%20MCP.pdf',
+  },
 ]
 
 export default function PapersPage() {

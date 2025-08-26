@@ -17,6 +17,12 @@ const papers = [
     backgroundImage: '/pink-bg.png',
   },
   {
+    title: 'A Guide to Build Agents with NGen and MCP',
+    description: 'New practical guide on building agents with NGen and the Model Context Protocol (MCP).',
+    href: '/company/news/a-guide-to-build-agents-with-ngen-and-mcp',
+    backgroundImage: '/blue-bg.png',
+  },
+  {
     title: 'Computational Hardware and Data Foundations for Sustainable Superintelligence',
     description: 'Navigating Energy, Multimodality, and Ethical Data at Scale.',
     href: '/research/computational-hardware-and-data-foundations-for-sustainable-superintelligence',
