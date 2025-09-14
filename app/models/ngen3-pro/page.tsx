@@ -91,6 +91,27 @@ export default function NGen3ProPage() {
             </div>
           </div>
 
+          {/* Pricing */}
+          <div className="mb-24">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Pricing</h2>
+            <div className="bg-blue-50 rounded-2xl p-8 max-w-2xl mx-auto text-center">
+              <h3 className="text-xl font-semibold mb-4">NGen 3.9 Pro - Balanced & Powerful</h3>
+              <div className="grid grid-cols-2 gap-8 mb-6">
+                <div>
+                  <div className="text-3xl font-bold text-blue-600">₹50.40</div>
+                  <div className="text-sm text-gray-600">Input / 1M tokens</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-blue-600">₹126.00</div>
+                  <div className="text-sm text-gray-600">Output / 1M tokens</div>
+                </div>
+              </div>
+              <div className="text-sm text-gray-600">
+                Stable • Context 40K • Reasoning
+              </div>
+            </div>
+          </div>
+
           {/* Technical Specifications */}
           <div className="mb-24">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Enterprise-Grade Specifications</h2>
@@ -101,7 +122,7 @@ export default function NGen3ProPage() {
                   <ul className="space-y-2 text-gray-600">
                     <li>• Advanced transformer architecture</li>
                     <li>• Multi-head attention mechanisms</li>
-                    <li>• Context window: 32K tokens</li>
+                    <li>• Context window: 40K tokens</li>
                     <li>• Fine-tuned for professional tasks</li>
                   </ul>
                 </div>

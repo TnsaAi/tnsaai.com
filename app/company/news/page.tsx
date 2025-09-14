@@ -5,6 +5,12 @@ import Image from 'next/image'
 
 const papers = [
   {
+    title: 'NGen 3.1 Models Series Launch',
+    description: 'Introducing the next generation of frontier AI models with breakthrough performance across all benchmarks.',
+    href: '/company/news/ngen3.1-models-series-launch',
+    backgroundImage: '/blue-bg.png',
+  },
+  {
     title: 'TNSA X Microsoft for Startups & Google TPU Research Cloud',
     description: 'TNSA joins forces with Microsoft for Startups and Google TPU Research Cloud to accelerate AI research.',
     href: '/company/news/tnsa-x-microsoft-for-startups-tnsa-x-google-tpu-research-cloud',

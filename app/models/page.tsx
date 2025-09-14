@@ -26,6 +26,50 @@ export default function ModelsPage() {
         </div>
       </div>
 
+      {/* NGen 3.1 Models Section */}
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">NGen 3.1 Models.</h2>
+            <p className="text-xl text-gray-600 mb-8">Next-generation frontier models with breakthrough performance</p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-1 max-w-2xl mx-auto">
+            {/* NGen 3.1 Pro Card */}
+            <Link href="/models/ngen3.1-pro">
+              <div
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/blue-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <h3 className="text-2xl font-semibold mb-8">NGen 3.1 Pro (Multimodal)</h3>
+                  <ul className="space-y-2 text-lg">
+                    <li>• Multimodal Excellence</li>
+                    <li>• Text + Image</li>
+                    <li>• Frontier Performance</li>
+                  </ul>
+                </div>
+                <div className="flex justify-between items-end">
+                  <span className="text-sm font-semibold text-white/80">NEW</span>
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* NGen 3.9 Models Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -260,7 +304,7 @@ export default function ModelsPage() {
               </div>
             </Link>
 
-            {/* NGen 3 140M Card */}
+            {/* NGen 3 140M V2 Card */}
             <Link href="/models/ngen3-140m-v2">
               <div
                 className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
@@ -743,19 +787,13 @@ export default function ModelsPage() {
                 href="https://api.tnsaai.com"
                 className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
               >
-                Try API →
-              </Link>
-              <Link
-                href="/products/genchat"
-                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-              >
-                GenGChat →
+                Try Our API
               </Link>
               <Link
                 href="/developers"
-                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+                className="rounded-md border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 transition-all"
               >
-                Developer Portal →
+                Documentation
               </Link>
             </div>
           </div>

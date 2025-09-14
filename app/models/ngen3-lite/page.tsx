@@ -91,6 +91,27 @@ export default function NGen3LitePage() {
             </div>
           </div>
 
+          {/* Pricing */}
+          <div className="mb-24">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Pricing</h2>
+            <div className="bg-orange-50 rounded-2xl p-8 max-w-2xl mx-auto text-center">
+              <h3 className="text-xl font-semibold mb-4">NGen 3.9 Lite - Fast & Efficient</h3>
+              <div className="grid grid-cols-2 gap-8 mb-6">
+                <div>
+                  <div className="text-3xl font-bold text-orange-600">₹16.80</div>
+                  <div className="text-sm text-gray-600">Input / 1M tokens</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-orange-600">₹50.40</div>
+                  <div className="text-sm text-gray-600">Output / 1M tokens</div>
+                </div>
+              </div>
+              <div className="text-sm text-gray-600">
+                Stable • Context 40K • Reasoning
+              </div>
+            </div>
+          </div>
+
           {/* Technical Specifications */}
           <div className="mb-24">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Technical Specifications</h2>

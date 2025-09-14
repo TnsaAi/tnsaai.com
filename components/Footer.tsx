@@ -19,6 +19,7 @@ const navigation = {
     { name: 'Security', href: '/security/protocols' },
   ],
   models: [
+    { name: 'NGen- 3.1 Pro', href: '/models/ngen3.1-pro' },
     { name: 'NGen- 3.9', href: '/models/ngen3-max' },
     { name: 'NGen- 3.0', href: '/models/ngen3-10b' },
     { name: 'NGen- 2.0', href: '/models/ngen2-170m' },

@@ -78,7 +78,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
-      
+
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden">
