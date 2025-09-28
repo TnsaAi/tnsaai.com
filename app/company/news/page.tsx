@@ -5,6 +5,12 @@ import Image from 'next/image'
 
 const papers = [
   {
+    title: 'Transforming Government Services with Large Language Models',
+    description: 'A comprehensive look at how LLMs can revolutionize government services and public administration.',
+    href: '/company/news/transforming-government-services-with-large-language-models',
+    backgroundImage: '/blue-bg.png',
+  },
+  {
     title: 'NGen 3.1 Models Series Launch',
     description: 'Introducing the next generation of frontier AI models with breakthrough performance across all benchmarks.',
     href: '/company/news/ngen3.1-models-series-launch',
