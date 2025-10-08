@@ -828,7 +828,7 @@ export default function ModelsPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Ready to Get Started?</h2>
             <div className="flex justify-center gap-4">
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
               >
                 Try Our API

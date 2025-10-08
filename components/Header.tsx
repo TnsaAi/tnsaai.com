@@ -51,7 +51,7 @@ export default function Header() {
             {/* CTA Buttons */}
             <div className="hidden lg:flex lg:items-center lg:space-x-3">
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 rounded-full transition-all"
               >
                 Try API
@@ -122,7 +122,7 @@ export default function Header() {
                 </div>
                 <div className="py-6 space-y-2">
                   <Link
-                    href="https://api.tnsaai.com"
+                    href="https://platform.tnsaai.com"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-white/10"
                   >
                     Try API

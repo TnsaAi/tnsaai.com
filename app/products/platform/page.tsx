@@ -27,7 +27,7 @@ export default function TNSAPlatformPage() {
             
             <div className="flex justify-center gap-4 mb-8">
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
               >
                 Access Platform →
@@ -157,7 +157,7 @@ export default function TNSAPlatformPage() {
             </p>
             <div className="flex justify-center gap-4">
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="rounded-md bg-black px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
               >
                 Get Started Free

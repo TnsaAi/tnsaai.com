@@ -135,7 +135,7 @@ export default function ProductsPage() {
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* Text Generation API */}
-            <Link href="https://api.tnsaai.com">
+            <Link href="https://platform.tnsaai.com">
               <div
                 className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
                 style={{
@@ -166,7 +166,7 @@ export default function ProductsPage() {
             </Link>
 
             {/* Image Generation API */}
-            <Link href="https://api.tnsaai.com">
+            <Link href="https://platform.tnsaai.com">
               <div
                 className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
                 style={{
@@ -197,7 +197,7 @@ export default function ProductsPage() {
             </Link>
 
             {/* Voice API */}
-            <Link href="https://api.tnsaai.com">
+            <Link href="https://platform.tnsaai.com">
               <div
                 className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
                 style={{
@@ -439,7 +439,7 @@ export default function ProductsPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Ready to Get Started?</h2>
             <div className="flex justify-center gap-4">
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
               >
                 Try API →

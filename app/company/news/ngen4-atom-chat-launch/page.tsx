@@ -33,7 +33,7 @@ export default function NGen4AtomChatLaunchPage() {
                 Explore Model →
               </Link>
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
               >
                 Try API →
@@ -237,7 +237,7 @@ export default function NGen4AtomChatLaunchPage() {
                 Explore Model
               </Link>
               <Link
-                href="https://api.tnsaai.com"
+                href="https://platform.tnsaai.com"
                 className="rounded-md border border-gray-300 bg-white px-8 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 transition-all"
               >
                 Access API

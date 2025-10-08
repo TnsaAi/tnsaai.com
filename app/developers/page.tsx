@@ -36,7 +36,7 @@ export default function DevelopersPage() {
           </div>
           
           <div className="grid grid-cols-1 gap-8">
-            <Link href="https://api.tnsaai.com/docs">
+            <Link href="https://platform.tnsaai.com/docs">
               <div 
                 className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
                 style={{

@@ -156,7 +156,7 @@ export default function Home() {
               View All Models →
             </Link>
             <Link
-              href="https://api.tnsaai.com"
+              href="https://platform.tnsaai.com"
               className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
             >
               Try API →
@@ -277,7 +277,7 @@ export default function Home() {
               View All Products →
             </Link>
             <Link
-              href="https://api.tnsaai.com"
+              href="https://platform.tnsaai.com"
               className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
             >
               Try API →
@@ -447,7 +447,7 @@ export default function Home() {
               View TNSA Models →
             </Link>
             <Link
-              href="https://api.tnsaai.com"
+              href="https://platform.tnsaai.com"
               className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
             >
               Try TNSA API →

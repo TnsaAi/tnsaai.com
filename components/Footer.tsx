@@ -11,7 +11,7 @@ const navigation = {
     { name: 'Careers', href: '/company/careers' },
   ],
   resources: [
-    { name: 'Docs →', href: 'https://api.tnsaai.com/docs' },
+    { name: 'Docs →', href: 'https://platform.tnsaai.com/docs' },
     { name: 'Status', href: '/status' },
   ],
   legal: [
@@ -32,7 +32,7 @@ const navigation = {
     { name: 'AGen* Q', href: '/models/agent-star' },
   ],
   products: [
-    { name: 'API →', href: 'https://api.tnsaai.com' },
+    { name: 'API →', href: 'https://platform.tnsaai.com' },
     { name: 'GensChat →', href: '/products/genchat' },
     { name: 'EdgeChat', href: '/products/edgechat' },
     { name: 'Enterprise Models', href: '/enterprises' },
