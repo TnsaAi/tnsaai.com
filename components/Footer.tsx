@@ -7,6 +7,7 @@ const navigation = {
     { name: 'AI Safety', href: '/safety' },
     { name: 'Contact', href: '/company/contact' },
     { name: 'News', href: '/news' },
+    { name: 'TNSA for Government', href: '/company/news/transforming-government-services-with-large-language-models' },
     { name: 'Careers', href: '/company/careers' },
   ],
   resources: [

@@ -6,9 +6,15 @@ import Image from 'next/image'
 const papers = [
   {
     title: 'NGen4 Atom Chat Launch',
-    description: 'Introducing TNSA\'s largest open-weight model - 10X the scale of NGen3 10B for conversational AI.',
+    description: 'Introducing TNSA\'s most massive model - 10X larger than our biggest open-weight model NGen3 10B.',
     href: '/company/news/ngen4-atom-chat-launch',
     backgroundImage: '/dark-green-bg.png',
+  },
+  {
+    title: 'Transforming Government Services with Large Language Models',
+    description: 'A comprehensive look at how LLMs can revolutionize government services and public administration.',
+    href: '/company/news/transforming-government-services-with-large-language-models',
+    backgroundImage: '/blue-bg.png',
   },
   {
     title: 'NGen 3.1 Models Series Launch',
