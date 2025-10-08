@@ -5,6 +5,12 @@ import Image from 'next/image'
 
 const papers = [
   {
+    title: 'NGen4 Atom Chat Launch',
+    description: 'Introducing TNSA\'s largest open-weight model - 10X the scale of NGen3 10B for conversational AI.',
+    href: '/company/news/ngen4-atom-chat-launch',
+    backgroundImage: '/dark-green-bg.png',
+  },
+  {
     title: 'NGen 3.1 Models Series Launch',
     description: 'Introducing the next generation of frontier AI models with breakthrough performance across all benchmarks.',
     href: '/company/news/ngen3.1-models-series-launch',

@@ -19,6 +19,7 @@ const navigation = {
     { name: 'Security', href: '/security/protocols' },
   ],
   models: [
+    { name: 'NGen4 Atom Chat', href: '/models/ngen4-atom-chat' },
     { name: 'NGen- 3.1 Pro', href: '/models/ngen3.1-pro' },
     { name: 'NGen- 3.9', href: '/models/ngen3-max' },
     { name: 'NGen- 3.0', href: '/models/ngen3-10b' },

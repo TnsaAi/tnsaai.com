@@ -26,6 +26,50 @@ export default function ModelsPage() {
         </div>
       </div>
 
+      {/* NGen 4 Models Section */}
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">NGen 4 Models.</h2>
+            <p className="text-xl text-gray-600 mb-8">Massive scale non-reasoning models for conversational AI</p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-1 max-w-2xl mx-auto">
+            {/* NGen4 Atom Chat Card */}
+            <Link href="/models/ngen4-atom-chat">
+              <div
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/dark-green-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <h3 className="text-2xl font-semibold mb-8">NGen4 Atom Chat</h3>
+                  <ul className="space-y-2 text-lg">
+                    <li>• 10X Scale (100B+ params)</li>
+                    <li>• Massive Scale Model</li>
+                    <li>• Conversational AI</li>
+                  </ul>
+                </div>
+                <div className="flex justify-between items-end">
+                  <span className="text-sm font-semibold text-white/80">NEW</span>
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* NGen 3.1 Models Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
