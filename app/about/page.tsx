@@ -9,12 +9,6 @@ export default function AboutPage() {
       <div className="bg-white p-1 h-screen flex items-center justify-center">
         <div 
           className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
-          style={{
-            backgroundImage: 'url(/cream-bg.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
         >
           <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
             <h1 className="text-5xl font-medium tracking-tight mb-16 font-sans bg-gradient-to-b from-gray-800 to-gray-600 bg-clip-text text-transparent sm:text-6xl lg:text-7xl xl:text-8xl">
