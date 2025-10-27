@@ -1,12 +1,16 @@
 
-from playwright.sync_api import sync_playwright
+import asyncio
+from playwright.async_api import async_playwright, expect
 
-def run():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.goto("http://localhost:3000/models")
-        page.screenshot(path="jules-scratch/verification/verification.png")
-        browser.close()
+async def main():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        page = await browser.new_page()
 
-run()
+        await page.goto("http://localhost:3000/models")
+        await expect(page).to_have_title("TNSA AI - Advancing Artificial Intelligence")
+        await page.screenshot(path="jules-scratch/verification/models-page.png")
+
+        await browser.close()
+
+asyncio.run(main())
