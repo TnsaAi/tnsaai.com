@@ -486,7 +486,7 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
     const reader = new FileReader();
     reader.onload = (e) => setFilePreviews({ [file.name]: e.target?.result as string });
     reader.readAsDataURL(file);
-  }, [isImageFile, setFiles, setFilePreviews]);
+  }, [setFiles, setFilePreviews, isImageFile]);
 
   const handleDragOver = React.useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -504,7 +504,7 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
     const files = Array.from(e.dataTransfer.files);
     const imageFiles = files.filter((file) => isImageFile(file));
     if (imageFiles.length > 0) processFile(imageFiles[0]);
-  }, [processFile]);
+  }, [processFile, isImageFile]);
 
   const handleRemoveFile = (index: number) => {
     const fileToRemove = files[index];
