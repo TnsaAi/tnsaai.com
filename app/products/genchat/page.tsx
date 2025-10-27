@@ -22,7 +22,7 @@ export default function GensChatPage() {
               GensChat
             </h1>
             <p className="text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
-              Access the Power of India's own Foundational Model - Conversational AI built for everyone.
+              Access the Power of India&apos;s own Foundational Model - Conversational AI built for everyone.
             </p>
             
             <div className="flex justify-center gap-4 mb-8">
@@ -153,7 +153,7 @@ export default function GensChatPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Start Chatting Today</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Experience the power of India's own foundational model in natural, helpful conversations.
+              Experience the power of India&apos;s own foundational model in natural, helpful conversations.
             </p>
             <div className="flex justify-center gap-4">
               <Link

@@ -56,49 +56,106 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* NGen 3.9 Lite Card */}
             <Link href="/models/ngen3-lite">
-              <Card className="hover:scale-105 transition-transform cursor-pointer">
-                <CardHeader>
-                  <CardTitle>NGen 3.9 Lite</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Ultra-Fast</li>
-                    <li>• Real-time</li>
-                    <li>• Lightweight</li>
-                  </ul>
-                </CardContent>
+              <Card
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/cream-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <CardHeader className="p-0 mb-8">
+                    <CardTitle className="text-2xl font-semibold">NGen 3.9 Lite</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <ul className="space-y-2 text-lg">
+                      <li>• Ultra-Fast</li>
+                      <li>• Real-time</li>
+                      <li>• Lightweight</li>
+                    </ul>
+                  </CardContent>
+                </div>
+                <div className="flex justify-between items-end">
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
               </Card>
             </Link>
 
             {/* NGen 3.9 Pro Card */}
             <Link href="/models/ngen3-pro">
-              <Card className="hover:scale-105 transition-transform cursor-pointer">
-                <CardHeader>
-                  <CardTitle>NGen 3.9 Pro</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Professional</li>
-                    <li>• Enterprise</li>
-                    <li>• Advanced</li>
-                  </ul>
-                </CardContent>
+              <Card
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/blue-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <CardHeader className="p-0 mb-8">
+                    <CardTitle className="text-2xl font-semibold">NGen 3.9 Pro</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <ul className="space-y-2 text-lg">
+                      <li>• Professional</li>
+                      <li>• Enterprise</li>
+                      <li>• Advanced</li>
+                    </ul>
+                  </CardContent>
+                </div>
+                <div className="flex justify-between items-end">
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
               </Card>
             </Link>
 
             {/* NGen 3.9 Max Card */}
             <Link href="/models/ngen3-max">
-              <Card className="hover:scale-105 transition-transform cursor-pointer">
-                <CardHeader>
-                  <CardTitle>NGen 3.9 Max</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Maximum Power</li>
-                    <li>• Research-Grade</li>
-                    <li>• Cutting-Edge</li>
-                  </ul>
-                </CardContent>
+              <Card
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/purple-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <CardHeader className="p-0 mb-8">
+                    <CardTitle className="text-2xl font-semibold">NGen 3.9 Max</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <ul className="space-y-2 text-lg">
+                      <li>• Maximum Power</li>
+                      <li>• Research-Grade</li>
+                      <li>• Cutting-Edge</li>
+                    </ul>
+                  </CardContent>
+                </div>
+                <div className="flex justify-between items-end">
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
               </Card>
             </Link>
           </div>
@@ -138,43 +195,100 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {/* TNSA Platform Card */}
             <Link href="/products/platform">
-              <Card className="hover:scale-105 transition-transform cursor-pointer">
-                <CardHeader>
-                  <CardTitle>TNSA Platform</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg leading-relaxed">
-                    Build the World with the Best Frontier Models.
-                  </p>
-                </CardContent>
+              <Card
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/green-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <CardHeader className="p-0 mb-8">
+                    <CardTitle className="text-2xl font-semibold">TNSA Platform</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <p className="text-lg leading-relaxed">
+                      Build the World with the Best Frontier Models.
+                    </p>
+                  </CardContent>
+                </div>
+                <div className="flex justify-between items-end">
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
               </Card>
             </Link>
 
             {/* GensChat Card */}
             <Link href="/products/genchat">
-              <Card className="hover:scale-105 transition-transform cursor-pointer">
-                <CardHeader>
-                  <CardTitle>GensChat</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg leading-relaxed">
-                    Access the Power of India&apos;s own Foundational Model.
-                  </p>
-                </CardContent>
+              <Card
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/pink-strong-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <CardHeader className="p-0 mb-8">
+                    <CardTitle className="text-2xl font-semibold">GensChat</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <p className="text-lg leading-relaxed">
+                      Access the Power of India&apos;s own Foundational Model.
+                    </p>
+                  </CardContent>
+                </div>
+                <div className="flex justify-between items-end">
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
               </Card>
             </Link>
 
             {/* EdgeChat Card */}
             <Link href="/products/edgechat">
-              <Card className="hover:scale-105 transition-transform cursor-pointer">
-                <CardHeader>
-                  <CardTitle>EdgeChat</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg leading-relaxed">
-                    AI accessible to all Humanity run AI without Network
-                  </p>
-                </CardContent>
+              <Card
+                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
+                style={{
+                  backgroundImage: 'url(/brown-blue-bg.png)',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              >
+                <div>
+                  <CardHeader className="p-0 mb-8">
+                    <CardTitle className="text-2xl font-semibold">EdgeChat</CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <p className="text-lg leading-relaxed">
+                      AI accessible to all Humanity run AI without Network
+                    </p>
+                  </CardContent>
+                </div>
+                <div className="flex justify-between items-end">
+                  <Image
+                    src="/TNSA.png"
+                    alt="TNSA"
+                    width={60}
+                    height={24}
+                    className="opacity-80"
+                  />
+                </div>
               </Card>
             </Link>
           </div>

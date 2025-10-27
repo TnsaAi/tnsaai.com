@@ -66,7 +66,7 @@ export default function NGen31LaunchPage() {
               capabilities, setting new benchmarks across reasoning, coding, and mathematical problem-solving.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              The NGen 3.1 series embodies our commitment to pushing the boundaries of what's possible in 
+              The NGen 3.1 series embodies our commitment to pushing the boundaries of what&apos;s possible in
               artificial intelligence, delivering unprecedented performance while maintaining the reliability 
               and efficiency that enterprises demand.
             </p>
@@ -205,7 +205,7 @@ export default function NGen31LaunchPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Looking Ahead</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The launch of NGen 3.1 Pro is just the beginning. We're actively developing additional models 
+              The launch of NGen 3.1 Pro is just the beginning. We&apos;re actively developing additional models
               in the 3.1 series, including specialized variants optimized for specific domains and use cases. 
               Our commitment to advancing the state of AI continues with ongoing research into even more 
               capable and efficient architectures.
@@ -220,7 +220,7 @@ export default function NGen31LaunchPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Experience NGen 3.1 Today</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join the next generation of AI development with NGen 3.1 Pro's breakthrough capabilities.
+              Join the next generation of AI development with NGen 3.1 Pro&apos;s breakthrough capabilities.
             </p>
             <div className="flex justify-center gap-4">
               <Link

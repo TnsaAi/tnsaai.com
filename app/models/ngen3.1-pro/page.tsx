@@ -242,7 +242,7 @@ export default function NGen31ProPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Experience the Future</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join the next generation of AI with NGen 3.1 Pro's breakthrough capabilities.
+              Join the next generation of AI with NGen 3.1 Pro&apos;s breakthrough capabilities.
             </p>
             <div className="flex justify-center gap-4">
               <Link

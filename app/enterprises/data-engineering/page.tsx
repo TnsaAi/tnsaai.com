@@ -170,7 +170,7 @@ export default function DataEngineeringPage() {
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Ready to Optimize Your Data Infrastructure?</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our data engineering services can accelerate your AI initiatives.
+              Let&apos;s discuss how our data engineering services can accelerate your AI initiatives.
             </p>
             <div className="flex justify-center gap-4">
               <Link

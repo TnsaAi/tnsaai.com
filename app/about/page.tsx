@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function AboutPage() {
   return (
@@ -33,7 +34,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Our Story</h2>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p>
-                TNSA AI was founded in 2021 by Thishyaketh Abimalla & Nachiketh Abimalla(Who Built one of the Best Generation Algorithm for TNSA named AutoPA) with a bold mission — to make India the global leader in Artificial Intelligence and pioneer the world's first AGI and Quantum Intelligence systems. Built without reliance on foreign core technology, TNSA develops foundational models, multimodal systems, and advanced AI frameworks.
+                TNSA AI was founded in 2021 by Thishyaketh Abimalla & Nachiketh Abimalla(Who Built one of the Best Generation Algorithm for TNSA named AutoPA) with a bold mission — to make India the global leader in Artificial Intelligence and pioneer the world&apos;s first AGI and Quantum Intelligence systems. Built without reliance on foreign core technology, TNSA develops foundational models, multimodal systems, and advanced AI frameworks.
               </p>
               <p>
                 What began as an independent research initiative, supported by family and later by Microsoft for Startups and Google TPU Research Cloud, has evolved into a global AI company. Our portfolio includes:
@@ -46,7 +47,7 @@ export default function AboutPage() {
                 <li><strong>Tokenize2</strong> — In-house BPE tokenizer optimized for large-scale training.</li>
               </ul>
               <p>
-                We combine deep research, safety-driven engineering, and national-first innovation to ensure AI serves both India's advancement and the benefit of humanity.
+                We combine deep research, safety-driven engineering, and national-first innovation to ensure AI serves both India&apos;s advancement and the benefit of humanity.
               </p>
             </div>
           </div>
@@ -55,26 +56,36 @@ export default function AboutPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Key Facts</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-2xl font-bold text-gray-900 mb-2">2021</div>
-                <div className="text-gray-600">Founded</div>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-2xl font-bold text-gray-900 mb-2">1 Founder</div>
-                <div className="text-gray-600">Youngest AI Founder in India</div>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-2xl font-bold text-gray-900 mb-2">20B+ Parameters</div>
-                <div className="text-gray-600">In-development flagship model</div>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="text-2xl font-bold text-gray-900 mb-2">5+ Major Model Families</div>
-                <div className="text-gray-600">NGen, IGen, StellarTTS, Neura, Tokenize2</div>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg md:col-span-2">
-                <div className="text-2xl font-bold text-gray-900 mb-2">Global</div>
-                <div className="text-gray-600">Recognition and collaborations</div>
-              </div>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="text-2xl font-bold text-gray-900 mb-2">2021</div>
+                  <div className="text-gray-600">Founded</div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="text-2xl font-bold text-gray-900 mb-2">1 Founder</div>
+                  <div className="text-gray-600">Youngest AI Founder in India</div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="text-2xl font-bold text-gray-900 mb-2">20B+ Parameters</div>
+                  <div className="text-gray-600">In-development flagship model</div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <div className="text-2xl font-bold text-gray-900 mb-2">5+ Major Model Families</div>
+                  <div className="text-gray-600">NGen, IGen, StellarTTS, Neura, Tokenize2</div>
+                </CardContent>
+              </Card>
+              <Card className="md:col-span-2">
+                <CardContent className="p-6">
+                  <div className="text-2xl font-bold text-gray-900 mb-2">Global</div>
+                  <div className="text-gray-600">Recognition and collaborations</div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -82,22 +93,30 @@ export default function AboutPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Our Principles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="border-l-4 border-blue-500 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Foundational Innovation</h3>
-                <p className="text-gray-600">Building every major component from scratch.</p>
-              </div>
-              <div className="border-l-4 border-green-500 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Safety & Ethics</h3>
-                <p className="text-gray-600">Ensuring AI is beneficial, transparent, and secure.</p>
-              </div>
-              <div className="border-l-4 border-purple-500 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">National Leadership</h3>
-                <p className="text-gray-600">Strengthening India's technological independence.</p>
-              </div>
-              <div className="border-l-4 border-orange-500 pl-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Open Contribution</h3>
-                <p className="text-gray-600">Advancing global AI knowledge through shared research.</p>
-              </div>
+              <Card className="border-l-4 border-blue-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Foundational Innovation</h3>
+                  <p className="text-gray-600">Building every major component from scratch.</p>
+                </CardContent>
+              </Card>
+              <Card className="border-l-4 border-green-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Safety & Ethics</h3>
+                  <p className="text-gray-600">Ensuring AI is beneficial, transparent, and secure.</p>
+                </CardContent>
+              </Card>
+              <Card className="border-l-4 border-purple-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">National Leadership</h3>
+                  <p className="text-gray-600">Strengthening India&apos;s technological independence.</p>
+                </CardContent>
+              </Card>
+              <Card className="border-l-4 border-orange-500">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Open Contribution</h3>
+                  <p className="text-gray-600">Advancing global AI knowledge through shared research.</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -105,30 +124,42 @@ export default function AboutPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Our Achievements</h2>
             <div className="space-y-6">
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">NGen Series</h3>
-                <p className="text-gray-600">Competitive performance across multiple benchmarks.</p>
-              </div>
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">IGen Series</h3>
-                <p className="text-gray-600">Efficient, scalable, and visually accurate generative models.</p>
-              </div>
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">StellarTTS</h3>
-                <p className="text-gray-600">Human-like, multilingual, and optimized for real-time.</p>
-              </div>
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Neura BETA</h3>
-                <p className="text-gray-600">First AGI framework capable of reasoning-based tasks.</p>
-              </div>
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Tokenize2</h3>
-                <p className="text-gray-600">Industry-optimized tokenizer for large-scale multilingual datasets.</p>
-              </div>
-              <div className="bg-white border border-gray-200 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Partnerships</h3>
-                <p className="text-gray-600">Microsoft for Startups, Google TPU Research Cloud.</p>
-              </div>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">NGen Series</h3>
+                  <p className="text-gray-600">Competitive performance across multiple benchmarks.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">IGen Series</h3>
+                  <p className="text-gray-600">Efficient, scalable, and visually accurate generative models.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">StellarTTS</h3>
+                  <p className="text-gray-600">Human-like, multilingual, and optimized for real-time.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Neura BETA</h3>
+                  <p className="text-gray-600">First AGI framework capable of reasoning-based tasks.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Tokenize2</h3>
+                  <p className="text-gray-600">Industry-optimized tokenizer for large-scale multilingual datasets.</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Partnerships</h3>
+                  <p className="text-gray-600">Microsoft for Startups, Google TPU Research Cloud.</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -136,21 +167,25 @@ export default function AboutPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Trusted Partners</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Microsoft</h3>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• Azure credits</li>
-                  <li>• Technical mentorship</li>
-                  <li>• Market enablement</li>
-                </ul>
-              </div>
-              <div className="bg-gradient-to-r from-red-50 to-red-100 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Google</h3>
-                <ul className="text-gray-600 space-y-2">
-                  <li>• TPU Research Cloud access</li>
-                  <li>• High-performance training</li>
-                </ul>
-              </div>
+              <Card className="bg-gradient-to-r from-blue-50 to-blue-100">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Microsoft</h3>
+                  <ul className="text-gray-600 space-y-2">
+                    <li>• Azure credits</li>
+                    <li>• Technical mentorship</li>
+                    <li>• Market enablement</li>
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-r from-red-50 to-red-100">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Google</h3>
+                  <ul className="text-gray-600 space-y-2">
+                    <li>• TPU Research Cloud access</li>
+                    <li>• High-performance training</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
 

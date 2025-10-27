@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const jobOpenings = [
   {
@@ -224,8 +225,8 @@ export default function CareersPage() {
           <div className="mb-16 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Join the AI Revolution</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Help us build the world's first AGI and shape the future of artificial intelligence. 
-              We're looking for passionate individuals who want to make a difference.
+              Help us build the world&apos;s first AGI and shape the future of artificial intelligence.
+              We&apos;re looking for passionate individuals who want to make a difference.
             </p>
           </div>
 
@@ -233,30 +234,38 @@ export default function CareersPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Our Culture</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Innovation First</h3>
-                <p className="text-gray-600">
-                  We encourage creative thinking and bold ideas. Every team member has the opportunity to contribute to groundbreaking research and development.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Collaboration</h3>
-                <p className="text-gray-600">
-                  We believe the best ideas come from diverse perspectives. Our global team collaborates across time zones and disciplines.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Impact-Driven</h3>
-                <p className="text-gray-600">
-                  We're not just building AI—we're building AI that benefits humanity. Every project has the potential to change the world.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Continuous Learning</h3>
-                <p className="text-gray-600">
-                  The AI field evolves rapidly, and so do we. We invest in your growth with learning opportunities and career development.
-                </p>
-              </div>
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Innovation First</h3>
+                  <p className="text-gray-600">
+                    We encourage creative thinking and bold ideas. Every team member has the opportunity to contribute to groundbreaking research and development.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Collaboration</h3>
+                  <p className="text-gray-600">
+                    We believe the best ideas come from diverse perspectives. Our global team collaborates across time zones and disciplines.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Impact-Driven</h3>
+                  <p className="text-gray-600">
+                    We&apos;re not just building AI—we&apos;re building AI that benefits humanity. Every project has the potential to change the world.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Continuous Learning</h3>
+                  <p className="text-gray-600">
+                    The AI field evolves rapidly, and so do we. We invest in your growth with learning opportunities and career development.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -265,10 +274,12 @@ export default function CareersPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Benefits & Perks</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
-                <div key={index} className="border border-gray-200 p-6 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </div>
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
+                    <p className="text-gray-600">{benefit.description}</p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
@@ -278,49 +289,51 @@ export default function CareersPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Open Positions</h2>
             <div className="space-y-8">
               {jobOpenings.map((job, index) => (
-                <div key={index} className="border border-gray-200 p-8 rounded-lg hover:shadow-lg transition-shadow">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">{job.title}</h3>
-                      <p className="text-gray-600">{job.department}</p>
-                    </div>
-                    <div className="mt-4 md:mt-0 text-right">
-                      <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-2">
-                        {job.type}
-                      </span>
-                      <p className="text-sm text-gray-500">{job.location}</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-600 mb-4">{job.description}</p>
-                  
-                  {job.skills && (
-                    <div className="mb-4">
-                      <h4 className="font-semibold text-gray-900 mb-2">Key Skills:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {job.skills.map((skill, skillIndex) => (
-                          <span key={skillIndex} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                            {skill}
-                          </span>
-                        ))}
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-8">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                      <div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2">{job.title}</h3>
+                        <p className="text-gray-600">{job.department}</p>
+                      </div>
+                      <div className="mt-4 md:mt-0 text-right">
+                        <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-2">
+                          {job.type}
+                        </span>
+                        <p className="text-sm text-gray-500">{job.location}</p>
                       </div>
                     </div>
-                  )}
-                  
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-2">Requirements:</h4>
-                    <ul className="list-disc list-inside text-gray-600 space-y-1">
-                      {job.requirements.map((req, reqIndex) => (
-                        <li key={reqIndex}>{req}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <Link
-                    href={`/company/careers/apply?position=${encodeURIComponent(job.title)}`}
-                    className="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-                  >
-                    Apply Now
-                  </Link>
-                </div>
+                    <p className="text-gray-600 mb-4">{job.description}</p>
+
+                    {job.skills && (
+                      <div className="mb-4">
+                        <h4 className="font-semibold text-gray-900 mb-2">Key Skills:</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {job.skills.map((skill, skillIndex) => (
+                            <span key={skillIndex} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                      <ul className="list-disc list-inside text-gray-600 space-y-1">
+                        {job.requirements.map((req, reqIndex) => (
+                          <li key={reqIndex}>{req}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <Link
+                      href={`/company/careers/apply?position=${encodeURIComponent(job.title)}`}
+                      className="inline-flex items-center rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+                    >
+                      Apply Now
+                    </Link>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
@@ -362,9 +375,9 @@ export default function CareersPage() {
 
           {/* Contact */}
           <div className="text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">Don't See the Right Role?</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">Don&apos;t See the Right Role?</h2>
             <p className="text-gray-600 mb-8">
-              We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
+              We&apos;re always looking for talented individuals. Send us your resume and we&apos;ll keep you in mind for future opportunities.
             </p>
             <Link
               href="/company/contact"
