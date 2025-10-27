@@ -69,7 +69,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
                 imageAlt="NGen3.1-Pro Model"
-                href="/models/ngen31-pro"
+                href="/models/NGen3.1-Pro"
               />
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/emerald-blue-bg.png"
                 imageAlt="NGen-Realtime-Omni Model"
-                href="/models/ngen-realtime-omni"
+                href="/models/NGen-Realtime-Omni"
               />
             </div>
 
@@ -107,7 +107,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/dark-pink-bg.png"
                 imageAlt="NGen-Realtime-Omni-Audio Model"
-                href="/models/ngen-realtime-omni-audio"
+                href="/models/NGen-Realtime-Omni-Audio"
               />
             </div>
           </div>
@@ -125,27 +125,27 @@ export default function ModelsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-5xl mx-auto">
             <div className="w-full max-w-sm">
               <FlightCard
-                title="TextSpeech-Pro"
+                title="AudioTextSpeech-Pro"
                 subtitle="Professional text-to-speech"
                 category="Audio"
                 price="₹1.00 per minute"
                 buttonText="Know More"
                 imageUrl="/black-violet-bg.png"
-                imageAlt="TextSpeech-Pro Model"
-                href="/models/textspeech-pro"
+                imageAlt="AudioTextSpeech-Pro Model"
+                href="/models/AudioTextSpeech-Pro"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="TextSpeech-1"
+                title="AudioTextSpeech-1"
                 subtitle="Basic text-to-speech"
                 category="Audio"
                 price="₹0.33 per minute"
                 buttonText="Know More"
                 imageUrl="/ground-brown-bg.png"
-                imageAlt="TextSpeech-1 Model"
-                href="/models/textspeech-1"
+                imageAlt="AudioTextSpeech-1 Model"
+                href="/models/AudioTextSpeech-1"
               />
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function ModelsPage() {
                 category="Image"
                 price="₹0.83 per image"
                 buttonText="Know More"
-                imageUrl="/pink-text-bg.png"
+                imageUrl="/violet-purple-bg.png"
                 imageAlt="IGen-1 Nano Model"
                 href="/models/igen1-nano"
               />
@@ -183,7 +183,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/black-white-bg.png"
                 imageAlt="IGen-1 Model"
-                href="/models/igen1"
+                href="/models/IGen-1"
               />
             </div>
 
@@ -221,7 +221,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/cream-bg.png"
                 imageAlt="NGen3.9-Lite Model"
-                href="/models/ngen39-lite"
+                href="/models/NGen3.9-Lite"
               />
             </div>
             
@@ -234,7 +234,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/blue-bg.png"
                 imageAlt="NGen3.9-Pro Model"
-                href="/models/ngen39-pro"
+                href="/models/NGen3.9-Pro"
               />
             </div>
 
@@ -247,7 +247,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/pink-bg.png"
                 imageAlt="NGen3.9-Lite Preview Model"
-                href="/models/ngen39-lite-preview"
+                href="/models/NGen3.9-Lite-2006-Preview"
               />
             </div>
 
@@ -260,7 +260,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
                 imageAlt="NGen3.9-Pro Preview Model"
-                href="/models/ngen39-pro-preview"
+                href="/models/NGen3.9-Pro-2406-Preview"
               />
             </div>
 
@@ -273,7 +273,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/dark-green-bg.png"
                 imageAlt="NGen3.9-Max Model"
-                href="/models/ngen39-max-preview"
+                href="/models/NGen3.9-Max-v2-128K-Preview"
               />
             </div>
 
@@ -286,7 +286,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/gold-bg.png"
                 imageAlt="NGen3.9-Max Stable Model"
-                href="/models/ngen39-max-stable"
+                href="/models/NGen3.9-Max-Stable-v3"
               />
             </div>
           </div>
@@ -427,7 +427,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/dark-green-bg.png"
                 imageAlt="NGen3-7B Model"
-                href="/models/ngen3-7b-0625"
+                href="/models/NGen3-7B-0625"
               />
             </div>
 
@@ -440,7 +440,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/pink-strong-bg.png"
                 imageAlt="NGen3-7B Preview Model"
-                href="/models/ngen3-7b-preview"
+                href="/models/NGen3-7B-0525-Preview"
               />
             </div>
 
@@ -453,7 +453,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/brown-blue-bg.png"
                 imageAlt="NGen3-1B Model"
-                href="/models/ngen3-1b"
+                href="/models/NGen3-1B"
               />
             </div>
 
@@ -466,7 +466,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/violet-purple-bg.png"
                 imageAlt="NGen3-1B-it Model"
-                href="/models/ngen3-1b-it"
+                href="/models/NGen3-1B-it"
               />
             </div>
           </div>
@@ -591,7 +591,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/blue-bg.png"
                 imageAlt="WebSearch-1 Model"
-                href="/models/websearch-1"
+                href="/models/WebSearch-1"
               />
             </div>
 
@@ -604,7 +604,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/dark-green-bg.png"
                 imageAlt="Scientist-1 Model"
-                href="/models/scientist-1"
+                href="/models/Scientist-1"
               />
             </div>
 
@@ -617,7 +617,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/green-bg.png"
                 imageAlt="Code-1 Model"
-                href="/models/code-1"
+                href="/models/Code-1"
               />
             </div>
 
@@ -630,7 +630,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
                 imageAlt="MultiAgent-1 Model"
-                href="/models/multiagent-1"
+                href="/models/MultiAgent-1"
               />
             </div>
 
