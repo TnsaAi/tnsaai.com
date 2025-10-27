@@ -30,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={spaceGrotesk.className}>
+    <html lang="en" className={`${spaceGrotesk.className} dark`}>
+      <body>
         <Header />
         <main className="min-h-screen">
           {children}
