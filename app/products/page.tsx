@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { FlightCard } from '@/components/ui/flight-card'
 
 export default function ProductsPage() {
   return (
@@ -34,93 +35,39 @@ export default function ProductsPage() {
             <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Making AI accessible to All Humanity.</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {/* TNSA Platform Card */}
-            <Link href="/products/platform">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/green-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">TNSA Platform</h3>
-                  <p className="text-lg leading-relaxed">
-                    Build the World with the Best Frontier Models.
-                  </p>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+            <FlightCard
+              title="TNSA Platform"
+              subtitle="API Platform"
+              category="Enterprise Ready"
+              price="Free Tier"
+              buttonText="Explore platform"
+              imageUrl="/green-bg.png"
+              imageAlt="TNSA Platform"
+              href="/products/platform"
+            />
 
-            {/* GenGChat Card */}
-            <Link href="/products/genchat">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/pink-strong-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">GensChat</h3>
-                  <p className="text-lg leading-relaxed">
-                    Access the Power of India&apos;s own Foundational Model.
-                  </p>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="GensChat"
+              subtitle="Conversational AI"
+              category="India's Own Model"
+              price="Free"
+              buttonText="Try GensChat"
+              imageUrl="/pink-strong-bg.png"
+              imageAlt="GensChat"
+              href="/products/genchat"
+            />
 
-            {/* EdgeChat Card */}
-            <Link href="/products/edgechat">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/brown-blue-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">EdgeChat</h3>
-                  <p className="text-lg leading-relaxed">
-                    AI accessible to all Humanity run AI without Network
-                  </p>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="EdgeChat"
+              subtitle="Offline AI"
+              category="Network-Free"
+              price="Coming Soon"
+              buttonText="Learn more"
+              imageUrl="/brown-blue-bg.png"
+              imageAlt="EdgeChat"
+              href="/products/edgechat"
+            />
           </div>
         </div>
       </div>
@@ -133,99 +80,39 @@ export default function ProductsPage() {
             <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Integrate AI into your applications.</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {/* Text Generation API */}
-            <Link href="https://platform.tnsaai.com">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/blue-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Text Generation API</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Multiple Models</li>
-                    <li>• Streaming Responses</li>
-                    <li>• Custom Parameters</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+            <FlightCard
+              title="Text Generation API"
+              subtitle="Language Models"
+              category="Multiple Models"
+              price="Pay per use"
+              buttonText="Try API"
+              imageUrl="/blue-bg.png"
+              imageAlt="Text Generation API"
+              href="https://platform.tnsaai.com"
+            />
 
-            {/* Image Generation API */}
-            <Link href="https://platform.tnsaai.com">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/purple-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Image Generation API</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• High-Quality Images</li>
-                    <li>• Style Control</li>
-                    <li>• Batch Processing</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="Image Generation API"
+              subtitle="Visual AI"
+              category="High-Quality Images"
+              price="Pay per image"
+              buttonText="Try API"
+              imageUrl="/purple-bg.png"
+              imageAlt="Image Generation API"
+              href="https://platform.tnsaai.com"
+            />
 
-            {/* Voice API */}
-            <Link href="https://platform.tnsaai.com">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/cream-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Voice Interaction API</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Natural Voices</li>
-                    <li>• Real-time Processing</li>
-                    <li>• Voice Cloning</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="Voice Interaction API"
+              subtitle="Speech AI"
+              category="Natural Voices"
+              price="Pay per minute"
+              buttonText="Try API"
+              imageUrl="/cream-bg.png"
+              imageAlt="Voice Interaction API"
+              href="https://platform.tnsaai.com"
+            />
           </div>
         </div>
       </div>
@@ -238,196 +125,72 @@ export default function ProductsPage() {
             <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Custom AI solutions for your business needs.</p>
           </div>
 
-          {/* Row 1 */}
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 mb-8">
-            {/* Custom Fine-Tuning */}
-            <Link href="/enterprises">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/emerald-blue-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Custom Fine-Tuning</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Domain-Specific Training</li>
-                    <li>• Custom Datasets</li>
-                    <li>• Performance Optimization</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+            <FlightCard
+              title="Custom Fine-Tuning"
+              subtitle="Domain-Specific Training"
+              category="Enterprise Service"
+              price="Custom Quote"
+              buttonText="Learn more"
+              imageUrl="/emerald-blue-bg.png"
+              imageAlt="Custom Fine-Tuning"
+              href="/enterprises"
+            />
 
-            {/* Pre-Training Services */}
-            <Link href="/enterprises">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/violet-purple-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Pre-Training Services</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Custom Model Architecture</li>
-                    <li>• Large-Scale Training</li>
-                    <li>• Proprietary Data Integration</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="Pre-Training Services"
+              subtitle="Custom Model Architecture"
+              category="Enterprise Service"
+              price="Custom Quote"
+              buttonText="Learn more"
+              imageUrl="/violet-purple-bg.png"
+              imageAlt="Pre-Training Services"
+              href="/enterprises"
+            />
 
-            {/* Infrastructure Support */}
-            <Link href="/enterprises">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/green-blue-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Infrastructure Support</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Cloud Deployment</li>
-                    <li>• On-Premise Solutions</li>
-                    <li>• 24/7 Technical Support</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
-          </div>
+            <FlightCard
+              title="Infrastructure Support"
+              subtitle="Cloud & On-Premise"
+              category="Enterprise Service"
+              price="Custom Quote"
+              buttonText="Learn more"
+              imageUrl="/green-blue-bg.png"
+              imageAlt="Infrastructure Support"
+              href="/enterprises"
+            />
 
-          {/* Row 2 */}
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {/* AI Consulting */}
-            <Link href="/enterprises">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/pink-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">AI Consulting</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Strategy Development</li>
-                    <li>• Implementation Planning</li>
-                    <li>• ROI Assessment</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="AI Consulting"
+              subtitle="Strategy Development"
+              category="Enterprise Service"
+              price="Custom Quote"
+              buttonText="Learn more"
+              imageUrl="/pink-bg.png"
+              imageAlt="AI Consulting"
+              href="/enterprises"
+            />
 
-            {/* Data Engineering */}
-            <Link href="/enterprises">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/brown-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Data Engineering</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Data Pipeline Design</li>
-                    <li>• Quality Assurance</li>
-                    <li>• Privacy Compliance</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="Data Engineering"
+              subtitle="Pipeline Design"
+              category="Enterprise Service"
+              price="Custom Quote"
+              buttonText="Learn more"
+              imageUrl="/brown-bg.png"
+              imageAlt="Data Engineering"
+              href="/enterprises"
+            />
 
-            {/* Model Deployment */}
-            <Link href="/enterprises">
-              <div
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/black-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">Model Deployment</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Production Scaling</li>
-                    <li>• Performance Monitoring</li>
-                    <li>• Continuous Integration</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="Model Deployment"
+              subtitle="Production Scaling"
+              category="Enterprise Service"
+              price="Custom Quote"
+              buttonText="Learn more"
+              imageUrl="/black-bg.png"
+              imageAlt="Model Deployment"
+              href="/enterprises"
+            />
           </div>
         </div>
       </div>

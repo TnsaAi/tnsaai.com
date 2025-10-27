@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { PromptInputBox } from '@/components/ui/ai-prompt-box'
+import { FlightCard } from '@/components/ui/flight-card'
 
 export default function Home() {
   const handleSendMessage = (message: string, files?: File[]) => {
@@ -15,7 +16,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       {/* Hero section */}
       <div className="bg-white p-1 h-screen flex items-center justify-center">
         <div 
@@ -52,99 +53,39 @@ export default function Home() {
             <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Best Frontier Models, Working for you.</p>
           </div>
           
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {/* NGen 3.9 Lite Card */}
-            <Link href="/models/ngen3-lite">
-              <div 
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/cream-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">NGen 3.9 Lite</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Ultra-Fast</li>
-                    <li>• Real-time</li>
-                    <li>• Lightweight</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+            <FlightCard
+              title="NGen 3.9 Lite"
+              subtitle="Ultra-Fast"
+              category="Real-time"
+              price="$0.10/1K tokens"
+              buttonText="Try Now"
+              imageUrl="/cream-bg.png"
+              imageAlt="NGen 3.9 Lite Model"
+              href="/models/ngen3-lite"
+            />
 
-            {/* NGen 3.9 Pro Card */}
-            <Link href="/models/ngen3-pro">
-              <div 
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/blue-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">NGen 3.9 Pro</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Professional</li>
-                    <li>• Enterprise</li>
-                    <li>• Advanced</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="NGen 3.9 Pro"
+              subtitle="Professional"
+              category="Enterprise"
+              price="$0.50/1K tokens"
+              buttonText="Try Now"
+              imageUrl="/blue-bg.png"
+              imageAlt="NGen 3.9 Pro Model"
+              href="/models/ngen3-pro"
+            />
 
-            {/* NGen 3.9 Max Card */}
-            <Link href="/models/ngen3-max">
-              <div 
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/purple-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">NGen 3.9 Max</h3>
-                  <ul className="space-y-2 text-lg">
-                    <li>• Maximum Power</li>
-                    <li>• Research-Grade</li>
-                    <li>• Cutting-Edge</li>
-                  </ul>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="NGen 3.9 Max"
+              subtitle="Maximum Power"
+              category="Research-Grade"
+              price="$1.00/1K tokens"
+              buttonText="Try Now"
+              imageUrl="/purple-bg.png"
+              imageAlt="NGen 3.9 Max Model"
+              href="/models/ngen3-max"
+            />
           </div>
 
           {/* Action Buttons */}
@@ -179,93 +120,39 @@ export default function Home() {
             <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Making AI accessible to All Humanity.</p>
           </div>
           
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {/* TNSA Platform Card */}
-            <Link href="/products/platform">
-              <div 
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/green-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">TNSA Platform</h3>
-                  <p className="text-lg leading-relaxed">
-                    Build the World with the Best Frontier Models.
-                  </p>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+            <FlightCard
+              title="TNSA Platform"
+              subtitle="API Platform"
+              category="Enterprise Ready"
+              price="Free Tier"
+              buttonText="Explore platform"
+              imageUrl="/green-bg.png"
+              imageAlt="TNSA Platform"
+              href="/products/platform"
+            />
 
-            {/* GensChat Card */}
-            <Link href="/products/genchat">
-              <div 
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/pink-strong-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">GensChat</h3>
-                  <p className="text-lg leading-relaxed">
-                    Access the Power of India&apos;s own Foundational Model.
-                  </p>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="GensChat"
+              subtitle="Conversational AI"
+              category="India's Own Model"
+              price="Free"
+              buttonText="Try GensChat"
+              imageUrl="/pink-strong-bg.png"
+              imageAlt="GensChat"
+              href="/products/genchat"
+            />
 
-            {/* EdgeChat Card */}
-            <Link href="/products/edgechat">
-              <div 
-                className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                style={{
-                  backgroundImage: 'url(/brown-blue-bg.png)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              >
-                <div>
-                  <h3 className="text-2xl font-semibold mb-8">EdgeChat</h3>
-                  <p className="text-lg leading-relaxed">
-                    AI accessible to all Humanity run AI without Network
-                  </p>
-                </div>
-                <div className="flex justify-between items-end">
-                  <Image
-                    src="/TNSA.png"
-                    alt="TNSA"
-                    width={60}
-                    height={24}
-                    className="opacity-80"
-                  />
-                </div>
-              </div>
-            </Link>
+            <FlightCard
+              title="EdgeChat"
+              subtitle="Offline AI"
+              category="Network-Free"
+              price="Coming Soon"
+              buttonText="Learn more"
+              imageUrl="/brown-blue-bg.png"
+              imageAlt="EdgeChat"
+              href="/products/edgechat"
+            />
           </div>
 
           {/* Action Buttons */}

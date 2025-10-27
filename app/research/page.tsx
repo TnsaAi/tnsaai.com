@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { FlightCard } from '@/components/ui/flight-card'
 
 const papers = [
   {
@@ -80,36 +81,19 @@ export default function ResearchPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
             {papers.map((paper) => (
-              <Link key={paper.title} href={paper.href}>
-                <div
-                  className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                  style={{
-                    backgroundImage: `url(${paper.backgroundImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
-                  }}
-                >
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-4 text-white">{paper.title}</h3>
-                    <p className="text-white mb-6">
-                      {paper.description}
-                    </p>
-                  </div>
-                  <div className="flex justify-between items-end">
-                    <span className="text-sm font-semibold text-white">Read More →</span>
-                    <Image
-                      src="/TNSA.png"
-                      alt="TNSA"
-                      width={60}
-                      height={24}
-                      className="opacity-80"
-                    />
-                  </div>
-                </div>
-              </Link>
+              <FlightCard
+                key={paper.title}
+                title={paper.title}
+                subtitle={paper.description}
+                category="Research Paper"
+                price="Free Access"
+                buttonText="Read Paper"
+                imageUrl={paper.backgroundImage}
+                imageAlt={paper.title}
+                href={paper.href}
+              />
             ))}
           </div>
         </div>
