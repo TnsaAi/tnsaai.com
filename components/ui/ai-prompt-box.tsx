@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { ArrowUp, Paperclip, Square, X, StopCircle, Mic, Globe, BrainCog, FolderCode } from "lucide-react";
@@ -245,10 +246,12 @@ const ImageViewDialog: React.FC<ImageViewDialogProps> = ({ imageUrl, onClose }) 
           transition={{ duration: 0.2, ease: "easeOut" }}
           className="relative bg-black/80 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl"
         >
-          <img
+          <Image
             src={imageUrl}
             alt="Full preview"
             className="w-full max-h-[80vh] object-contain rounded-2xl"
+            width={800}
+            height={600}
           />
         </motion.div>
       </DialogContent>
@@ -468,9 +471,9 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
 
   const handleCanvasToggle = () => setShowCanvas((prev) => !prev);
 
-  const isImageFile = (file: File) => file.type.startsWith("image/");
+  const isImageFile = React.useCallback((file: File) => file.type.startsWith("image/"), []);
 
-  const processFile = (file: File) => {
+  const processFile = React.useCallback((file: File) => {
     if (!isImageFile(file)) {
       console.log("Only image files are allowed");
       return;
@@ -483,7 +486,7 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
     const reader = new FileReader();
     reader.onload = (e) => setFilePreviews({ [file.name]: e.target?.result as string });
     reader.readAsDataURL(file);
-  };
+  }, [isImageFile, setFiles, setFilePreviews]);
 
   const handleDragOver = React.useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -501,7 +504,7 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
     const files = Array.from(e.dataTransfer.files);
     const imageFiles = files.filter((file) => isImageFile(file));
     if (imageFiles.length > 0) processFile(imageFiles[0]);
-  }, []);
+  }, [processFile]);
 
   const handleRemoveFile = (index: number) => {
     const fileToRemove = files[index];
@@ -524,7 +527,7 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
         }
       }
     }
-  }, []);
+  }, [processFile]);
 
   React.useEffect(() => {
     document.addEventListener("paste", handlePaste);
@@ -582,10 +585,12 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
                     className="w-16 h-16 rounded-xl overflow-hidden cursor-pointer transition-all duration-300"
                     onClick={() => openImageModal(filePreviews[file.name])}
                   >
-                    <img
+                    <Image
                       src={filePreviews[file.name]}
                       alt={file.name}
                       className="h-full w-full object-cover"
+                      width={64}
+                      height={64}
                     />
                     <button
                       onClick={(e) => {

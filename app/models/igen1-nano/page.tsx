@@ -11,7 +11,7 @@ export default function IGen1NanoPage() {
         <div 
           className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
           style={{
-            backgroundImage: 'url(/green-bg.png)',
+            backgroundImage: 'url(/violet-purple-bg.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'

@@ -22,7 +22,7 @@ export default function NGen4AtomChatLaunchPage() {
               NGen4 Atom Chat Launch
             </h1>
             <p className="text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
-              Introducing TNSA's most massive model - 10X larger than our biggest open-weight model NGen3 10B
+              Introducing TNSA&apos;s most massive model - 10X larger than our biggest open-weight model NGen3 10B
             </p>
             
             <div className="flex justify-center gap-4 mb-8">
@@ -61,7 +61,7 @@ export default function NGen4AtomChatLaunchPage() {
           <div className="mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Scaling New Heights in Conversational AI</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Today, we're proud to announce the launch of NGen4 Atom Chat, TNSA's most ambitious language model to date. 
+              Today, we&apos;re proud to announce the launch of NGen4 Atom Chat, TNSA&apos;s most ambitious language model to date.
               This massive-scale model represents a 10X increase in parameters compared to our NGen3 10B model, 
               delivering unprecedented conversational capabilities and natural language understanding.
             </p>
@@ -71,7 +71,7 @@ export default function NGen4AtomChatLaunchPage() {
               With over 100 billion parameters, it sets a new standard for massive-scale conversational AI.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              At 10X the scale of TNSA's biggest open-weight model NGen3 10B, NGen4 Atom Chat represents our 
+              At 10X the scale of TNSA&apos;s biggest open-weight model NGen3 10B, NGen4 Atom Chat represents our
               most ambitious conversational AI model, delivering unprecedented capabilities for enterprise and 
               research applications.
             </p>
@@ -115,7 +115,7 @@ export default function NGen4AtomChatLaunchPage() {
               <div className="p-6 border border-gray-200 rounded-xl">
                 <h3 className="text-lg font-semibold mb-3">Massive Scale Model</h3>
                 <p className="text-gray-600">
-                  10X larger than TNSA's biggest open-weight model, delivering unprecedented conversational 
+                  10X larger than TNSA&apos;s biggest open-weight model, delivering unprecedented conversational
                   capabilities and language understanding at enterprise scale.
                 </p>
               </div>
@@ -214,12 +214,12 @@ export default function NGen4AtomChatLaunchPage() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Looking Forward</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               NGen4 Atom Chat represents just the beginning of our exploration into massive-scale conversational AI. 
-              We're committed to continuing this research direction, developing even more capable models while 
+              We&apos;re committed to continuing this research direction, developing even more capable models while
               maintaining our open-source philosophy.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We're excited to see how the community will use, adapt, and build upon NGen4 Atom Chat to create 
-              innovative applications and push the boundaries of what's possible in conversational AI.
+              We&apos;re excited to see how the community will use, adapt, and build upon NGen4 Atom Chat to create
+              innovative applications and push the boundaries of what&apos;s possible in conversational AI.
             </p>
           </div>
 
@@ -227,7 +227,7 @@ export default function NGen4AtomChatLaunchPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Experience NGen4 Atom Chat</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Start building with TNSA's most massive conversational AI model today.
+              Start building with TNSA&apos;s most massive conversational AI model today.
             </p>
             <div className="flex justify-center gap-4">
               <Link

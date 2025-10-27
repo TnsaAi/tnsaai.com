@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="mb-16">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Get in Touch.</h2>
             <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">
-              We're here to help with your AI needs and answer any questions.
+              We&apos;re here to help with your AI needs and answer any questions.
             </p>
           </div>
           
@@ -67,7 +67,7 @@ export default function ContactPage() {
               <div className="bg-gray-50 rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-gray-900">Enterprise Sales</h3>
                 <p className="text-gray-600 mb-6">
-                  Ready to scale AI in your enterprise? Let's discuss your needs.
+                  Ready to scale AI in your enterprise? Let&apos;s discuss your needs.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center">

@@ -231,7 +231,7 @@ export default function DeploymentPage() {
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Ready to Deploy at Scale?</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let's discuss your deployment requirements and create a solution that scales with your business.
+              Let&apos;s discuss your deployment requirements and create a solution that scales with your business.
             </p>
             <div className="flex justify-center gap-4">
               <Link

@@ -1,3 +1,4 @@
+
 'use client'
 
 import Link from 'next/link'
@@ -12,7 +13,7 @@ export default function NGen31ProPage() {
           className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
           style={{
             backgroundImage: 'url(/purple-bg.png)',
-            backgroundSize: '100% 100%',
+            backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
           }}
@@ -22,7 +23,7 @@ export default function NGen31ProPage() {
               NGen3.1-Pro
             </h1>
             <p className="text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
-              Handles image and text inputs
+              Text + Image reasoning and understanding
             </p>
 
             <div className="flex justify-center gap-4 mb-8">
@@ -81,8 +82,8 @@ export default function NGen31ProPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-4">Pricing</h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Input:₹0.42 / 1K tokens</li>
-                    <li>• Output:₹0.58 + ₹1.66/image</li>
+                    <li>• Input: ₹0.42 / 1K tokens</li>
+                    <li>• Output: ₹0.58 + ₹1.66/image</li>
                   </ul>
                 </div>
                 <div>
@@ -101,19 +102,22 @@ export default function NGen31ProPage() {
           <div className="mb-24">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Description</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Text + Image reasoning and understanding
+              Text + Image reasoning and understanding
             </p>
           </div>
 
           {/* Getting Started */}
           <div className="text-center bg-gray-50 rounded-2xl p-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Start Creating</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Start Creating Visually</h2>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Unlock the power of multimodal AI with NGen3.1-Pro&apos;s advanced reasoning and visual understanding.
+            </p>
             <div className="flex justify-center gap-4">
               <Link
                 href="https://platform.tnsaai.com"
                 className="rounded-md bg-black px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
               >
-                Get Started
+                Generate Images
               </Link>
               <Link
                 href="/developers"

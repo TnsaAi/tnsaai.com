@@ -22,7 +22,7 @@ export default function NGen4AtomChatPage() {
               NGen4 Atom Chat
             </h1>
             <p className="text-xl mb-8 leading-relaxed max-w-2xl mx-auto">
-              Non-reasoning large language model - 10X larger than TNSA's biggest open-weight model NGen3 10B.
+              Non-reasoning large language model - 10X larger than TNSA&apos;s biggest open-weight model NGen3 10B.
             </p>
             
             <div className="flex justify-center gap-4 mb-8">
@@ -60,11 +60,11 @@ export default function NGen4AtomChatPage() {
           <div className="prose prose-lg mx-auto text-gray-700">
             <p className="text-xl leading-relaxed mb-6">
               NGen4 Atom Chat represents a massive leap in model scale and conversational capability. Built as a 
-              non-reasoning large language model, it's designed specifically for natural, engaging conversations 
+              non-reasoning large language model, it&apos;s designed specifically for natural, engaging conversations
               and content generation at unprecedented scale.
             </p>
             <p className="text-lg leading-relaxed mb-6">
-              At 10X the size of TNSA's biggest open-weight model NGen3 10B, NGen4 Atom Chat delivers exceptional 
+              At 10X the size of TNSA&apos;s biggest open-weight model NGen3 10B, NGen4 Atom Chat delivers exceptional
               performance in dialogue, creative writing, and general language understanding with massive-scale 
               AI capabilities.
             </p>
@@ -131,7 +131,7 @@ export default function NGen4AtomChatPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-3">Massive Scale</h3>
-              <p className="text-gray-600">10X larger than TNSA's biggest open-weight model, delivering unprecedented conversational depth.</p>
+              <p className="text-gray-600">10X larger than TNSA&apos;s biggest open-weight model, delivering unprecedented conversational depth.</p>
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function NGen4AtomChatPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Experience Massive Scale</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Harness the power of TNSA's most massive conversational AI model for your applications.
+              Harness the power of TNSA&apos;s most massive conversational AI model for your applications.
             </p>
             <div className="flex justify-center gap-4">
               <Link

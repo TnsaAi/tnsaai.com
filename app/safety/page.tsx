@@ -126,7 +126,7 @@ export default function SafetyPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">Questions About AI Safety?</h2>
             <p className="text-gray-600 mb-8">
-              We're committed to transparency and welcome questions about our safety practices.
+              We&apos;re committed to transparency and welcome questions about our safety practices.
             </p>
             <Link
               href="/company/contact"

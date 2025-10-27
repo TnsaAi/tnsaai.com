@@ -77,7 +77,7 @@ export default function NGen3_10BPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Frontier Technology</h3>
-                <p className="text-gray-600">State-of-the-art architecture pushing the boundaries of what's possible in AI.</p>
+                <p className="text-gray-600">State-of-the-art architecture pushing the boundaries of what&apos;s possible in AI.</p>
               </div>
               <div className="text-center p-6 rounded-2xl bg-gray-50">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">

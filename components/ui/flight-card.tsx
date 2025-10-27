@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Tag, Cpu } from "lucide-react";
 
 interface FlightCardProps {
@@ -31,12 +32,14 @@ export const FlightCard = ({
   };
 
   return (
-    <div className="w-full max-w-[390px] h-[550px] bg-white rounded-[2.5rem] shadow-2xl overflow-hidden relative">
+    <div className="w-full max-w-[390px] bg-white rounded-[2.5rem] shadow-2xl overflow-hidden relative">
       {/* Background Image */}
-      <img
+      <Image
         src={imageUrl}
         alt={imageAlt}
-        className="w-full h-full object-cover absolute inset-0"
+        className="w-full h-full object-cover"
+        fill
+        priority
       />
 
       {/* Bottom Gradient Overlay with Fading Blur */}

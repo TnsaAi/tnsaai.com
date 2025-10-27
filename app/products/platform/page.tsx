@@ -153,7 +153,7 @@ export default function TNSAPlatformPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Start Building Today</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Join thousands of developers building the future with TNSA Platform's powerful AI capabilities.
+              Join thousands of developers building the future with TNSA Platform&apos;s powerful AI capabilities.
             </p>
             <div className="flex justify-center gap-4">
               <Link

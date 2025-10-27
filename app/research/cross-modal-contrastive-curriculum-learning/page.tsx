@@ -38,9 +38,9 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Core Innovations.</h2>
             <ul className="list-disc list-inside text-xl text-gray-900  sm:text-2xl lg:text-3xl space-y-4">
-              <li>Synergy of Contrastive and Curriculum Learning: Combines contrastive learning's ability to create robust shared representations with curriculum learning's structured, easy-to-hard training approach.</li>
+              <li>Synergy of Contrastive and Curriculum Learning: Combines contrastive learning&apos;s ability to create robust shared representations with curriculum learning&apos;s structured, easy-to-hard training approach.</li>
               <li>Progressive Difficulty: The model is first trained on easy-to-align data pairs and then progressively introduced to more complex and abstract pairs, allowing it to build a strong foundational understanding.</li>
-              <li>Handling Hard Negatives: The curriculum-based approach provides a principled way to introduce "hard negatives" (samples that are semantically similar but distinct) without destabilizing the training process.</li>
+              <li>Handling Hard Negatives: The curriculum-based approach provides a principled way to introduce &quot;hard negatives&quot; (samples that are semantically similar but distinct) without destabilizing the training process.</li>
             </ul>
           </div>
 
@@ -66,7 +66,7 @@ export default function PaperPage() {
             <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Future Directions.</h2>
             <ul className="list-disc list-inside text-xl text-gray-900  sm:text-2xl lg:text-3xl space-y-4">
                 <li>Extending CMCCL frameworks beyond image-text modalities to include audio, video, depth information, and structured data.</li>
-                <li>Developing more transparent and interpretable methods for defining and adapting curriculum difficulty, moving beyond "black box" learned evaluators.</li>
+                <li>Developing more transparent and interpretable methods for defining and adapting curriculum difficulty, moving beyond &quot;black box&quot; learned evaluators.</li>
                 <li>Improving the robustness of CMCCL models to noise, ambiguity, and domain shifts in real-world datasets.</li>
             </ul>
           </div>

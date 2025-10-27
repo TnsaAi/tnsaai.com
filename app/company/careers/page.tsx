@@ -224,8 +224,8 @@ export default function CareersPage() {
           <div className="mb-16 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Join the AI Revolution</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Help us build the world's first AGI and shape the future of artificial intelligence. 
-              We're looking for passionate individuals who want to make a difference.
+              Help us build the world&apos;s first AGI and shape the future of artificial intelligence.
+              We&apos;re looking for passionate individuals who want to make a difference.
             </p>
           </div>
 
@@ -248,7 +248,7 @@ export default function CareersPage() {
               <div className="bg-gray-50 p-8 rounded-lg">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Impact-Driven</h3>
                 <p className="text-gray-600">
-                  We're not just building AI—we're building AI that benefits humanity. Every project has the potential to change the world.
+                  We&apos;re not just building AI—we&apos;re building AI that benefits humanity. Every project has the potential to change the world.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg">
@@ -362,9 +362,9 @@ export default function CareersPage() {
 
           {/* Contact */}
           <div className="text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">Don't See the Right Role?</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">Don&apos;t See the Right Role?</h2>
             <p className="text-gray-600 mb-8">
-              We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
+              We&apos;re always looking for talented individuals. Send us your resume and we&apos;ll keep you in mind for future opportunities.
             </p>
             <Link
               href="/company/contact"

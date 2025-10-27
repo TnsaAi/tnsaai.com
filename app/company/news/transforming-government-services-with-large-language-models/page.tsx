@@ -94,7 +94,7 @@ export default function NewsPage() {
               <section>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">The NGen3 Series: Advanced AI Models for Government Schemes</h3>
                 <p className="text-gray-800 text-lg mb-6">
-                  At TNSA AI, we've developed specialized models that go beyond standard LLMs, offering enhanced capabilities for government use cases. Here's how NGen3.9 Pro, NGen3.9 Max, and NGen3.1 Pro Multimodal can transform public services:
+                  At TNSA AI, we&apos;ve developed specialized models that go beyond standard LLMs, offering enhanced capabilities for government use cases. Here&apos;s how NGen3.9 Pro, NGen3.9 Max, and NGen3.1 Pro Multimodal can transform public services:
                 </p>
 
                 <div className="mb-8">
@@ -189,7 +189,7 @@ export default function NewsPage() {
               <section>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Call to Action</h3>
                 <p className="text-gray-800 text-lg">
-                  Ready to transform your government services with cutting-edge AI? Explore how TNSA AI's NGen3 Series can revolutionize public administration. Contact us today to learn more about how we can collaborate to build a smarter, more inclusive future.
+                  Ready to transform your government services with cutting-edge AI? Explore how TNSA AI&apos;s NGen3 Series can revolutionize public administration. Contact us today to learn more about how we can collaborate to build a smarter, more inclusive future.
                 </p>
               </section>
             </div>

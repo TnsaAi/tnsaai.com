@@ -171,7 +171,7 @@ export default function FineTuningPage() {
               </div>
               <div className="p-6 border border-gray-200 rounded-xl">
                 <h3 className="text-lg font-semibold mb-3">Industry-Specific Content</h3>
-                <p className="text-gray-600">Create models that understand your industry's unique language, processes, and requirements.</p>
+                <p className="text-gray-600">Create models that understand your industry&apos;s unique language, processes, and requirements.</p>
               </div>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function FineTuningPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Ready to Create Your Custom Model?</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let's discuss your specific requirements and design a fine-tuning solution that delivers exceptional results for your business.
+              Let&apos;s discuss your specific requirements and design a fine-tuning solution that delivers exceptional results for your business.
             </p>
             <div className="flex justify-center gap-4">
               <Link

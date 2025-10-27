@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Tag, Cpu } from "lucide-react";
 
 interface ProductCardProps {
@@ -34,10 +35,12 @@ export const ProductCard = ({
         <div className="w-full max-w-[390px] bg-white rounded-[2.5rem] shadow-2xl p-4">
             {/* Image Container */}
             <div className="relative w-full aspect-square rounded-[2rem] overflow-hidden mb-4">
-                <img
+                <Image
                     src={imageUrl}
                     alt={imageAlt}
                     className="w-full h-full object-cover"
+                    fill
+                    priority
                 />
             </div>
 

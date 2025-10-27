@@ -22,7 +22,7 @@ export default function NGen3_7BPage() {
               NGen 3 7B
             </h1>
             <p className="text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
-              Access the Power of India's own Foundational Model - Built by Indians, for the World.
+              Access the Power of India&apos;s own Foundational Model - Built by Indians, for the World.
             </p>
             
             <div className="flex justify-center gap-4 mb-8">
@@ -120,7 +120,7 @@ export default function NGen3_7BPage() {
 
           {/* Use Cases */}
           <div className="mb-24">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Empowering India's Digital Future</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Empowering India&apos;s Digital Future</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 border border-gray-200 rounded-xl">
                 <h3 className="text-lg font-semibold mb-3">Government Services</h3>
@@ -153,7 +153,7 @@ export default function NGen3_7BPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Join the AI Revolution</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Be part of India's AI journey with our foundational model designed for Indian needs and global aspirations.
+              Be part of India&apos;s AI journey with our foundational model designed for Indian needs and global aspirations.
             </p>
             <div className="flex justify-center gap-4">
               <Link

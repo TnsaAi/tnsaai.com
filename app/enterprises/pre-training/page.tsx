@@ -96,7 +96,7 @@ export default function PreTrainingPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Proprietary Knowledge</h3>
-                <p className="text-gray-600">Embed your proprietary data and domain expertise directly into the model's foundation.</p>
+                <p className="text-gray-600">Embed your proprietary data and domain expertise directly into the model&apos;s foundation.</p>
               </div>
               <div className="text-center p-6 rounded-2xl bg-gray-50">
                 <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -178,7 +178,7 @@ export default function PreTrainingPage() {
               </div>
               <div className="p-6 border border-gray-200 rounded-xl">
                 <h3 className="text-lg font-semibold mb-3">Enterprise Knowledge</h3>
-                <p className="text-gray-600">Models that understand your company's processes, products, and institutional knowledge.</p>
+                <p className="text-gray-600">Models that understand your company&apos;s processes, products, and institutional knowledge.</p>
               </div>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function PreTrainingPage() {
           <div className="text-center bg-gray-50 rounded-2xl p-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Ready to Build Your Foundation Model?</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Pre-training is a significant investment that delivers unparalleled performance. Let's discuss your vision and requirements.
+              Pre-training is a significant investment that delivers unparalleled performance. Let&apos;s discuss your vision and requirements.
             </p>
             <div className="flex justify-center gap-4">
               <Link

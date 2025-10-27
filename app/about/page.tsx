@@ -46,7 +46,7 @@ export default function AboutPage() {
                 <li><strong>Tokenize2</strong> — In-house BPE tokenizer optimized for large-scale training.</li>
               </ul>
               <p>
-                We combine deep research, safety-driven engineering, and national-first innovation to ensure AI serves both India's advancement and the benefit of humanity.
+                We combine deep research, safety-driven engineering, and national-first innovation to ensure AI serves both India&apos;s advancement and the benefit of humanity.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
               </div>
               <div className="border-l-4 border-purple-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">National Leadership</h3>
-                <p className="text-gray-600">Strengthening India's technological independence.</p>
+                <p className="text-gray-600">Strengthening India&apos;s technological independence.</p>
               </div>
               <div className="border-l-4 border-orange-500 pl-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Open Contribution</h3>
