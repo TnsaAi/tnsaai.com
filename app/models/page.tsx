@@ -62,14 +62,14 @@ export default function ModelsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-5xl mx-auto">
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.1-Pro"
-                subtitle="Text + Image reasoning"
+                title="NGen3.1-Pro Multimodal"
+                subtitle="Handles image and text inputs"
                 category="Multimodal"
-                price="₹0.42 input / ₹0.58 output"
+                price="₹0.42 input / ₹0.58 + ₹1.66/image output"
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
-                imageAlt="NGen3.1-Pro Model"
-                href="/models/ngen31-pro"
+                imageAlt="NGen3.1-Pro Multimodal Model"
+                href="/models/ngen3.1-pro-multimodal"
               />
             </div>
           </div>
@@ -87,27 +87,27 @@ export default function ModelsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-5xl mx-auto">
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen-Realtime-Omni"
-                subtitle="Real-time multimodal assistant"
+                title="NGen-Realtime-Omni Multimodal"
+                subtitle="Text, audio, and image in real-time"
                 category="Omni"
                 price="₹1.25 input / ₹1.66 output"
                 buttonText="Know More"
                 imageUrl="/emerald-blue-bg.png"
-                imageAlt="NGen-Realtime-Omni Model"
-                href="/models/ngen-realtime-omni"
+                imageAlt="NGen-Realtime-Omni Multimodal Model"
+                href="/models/ngen-realtime-omni-multimodal"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
                 title="NGen-Realtime-Omni-Audio"
-                subtitle="Real-time audio understanding"
+                subtitle="Real-time audio processing and understanding"
                 category="Omni"
                 price="₹1.66 per minute"
                 buttonText="Know More"
                 imageUrl="/dark-pink-bg.png"
                 imageAlt="NGen-Realtime-Omni-Audio Model"
-                href="/models/ngen-realtime-omni-audio"
+                href="/models/ngen-realtime-omni-audio-audio"
               />
             </div>
           </div>
@@ -125,27 +125,27 @@ export default function ModelsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-5xl mx-auto">
             <div className="w-full max-w-sm">
               <FlightCard
-                title="TextSpeech-Pro"
-                subtitle="Professional text-to-speech"
+                title="AudioTextSpeech-Pro"
+                subtitle="Professional-grade text-to-speech synthesis"
                 category="Audio"
                 price="₹1.00 per minute"
                 buttonText="Know More"
                 imageUrl="/black-violet-bg.png"
-                imageAlt="TextSpeech-Pro Model"
-                href="/models/textspeech-pro"
+                imageAlt="AudioTextSpeech-Pro Model"
+                href="/models/audiotextspeech-pro-audio"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="TextSpeech-1"
-                subtitle="Basic text-to-speech"
+                title="AudioTextSpeech-1"
+                subtitle="Basic text-to-speech for simple applications"
                 category="Audio"
                 price="₹0.33 per minute"
                 buttonText="Know More"
                 imageUrl="/ground-brown-bg.png"
-                imageAlt="TextSpeech-1 Model"
-                href="/models/textspeech-1"
+                imageAlt="AudioTextSpeech-1 Model"
+                href="/models/audiotextspeech-1-audio"
               />
             </div>
           </div>
@@ -164,39 +164,26 @@ export default function ModelsPage() {
             <div className="w-full max-w-sm">
               <FlightCard
                 title="IGen-1 Nano"
-                subtitle="Compact image generator"
+                subtitle="512×512, fast and efficient"
                 category="Image"
                 price="₹0.83 per image"
                 buttonText="Know More"
                 imageUrl="/pink-text-bg.png"
                 imageAlt="IGen-1 Nano Model"
-                href="/models/igen1-nano"
+                href="/models/igen-1-nano-image"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
                 title="IGen-1"
-                subtitle="Advanced image generation"
+                subtitle="Up to 4K resolution with advanced editing features"
                 category="Image"
                 price="₹2.50 per image"
                 buttonText="Know More"
                 imageUrl="/black-white-bg.png"
                 imageAlt="IGen-1 Model"
-                href="/models/igen1"
-              />
-            </div>
-
-            <div className="w-full max-w-sm">
-              <FlightCard
-                title="IGen-1 Fast"
-                subtitle="Fast image generation"
-                category="Image"
-                price="₹1.25 per image"
-                buttonText="Know More"
-                imageUrl="/green-blue-bg.png"
-                imageAlt="IGen-1 Fast Model"
-                href="/models/igen1-fast"
+                href="/models/igen-1-image"
               />
             </div>
           </div>
@@ -214,79 +201,79 @@ export default function ModelsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-6xl mx-auto">
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.9-Lite"
-                subtitle="Lightweight conversational AI"
+                title="NGen3.9-Lite Chat"
+                subtitle="Fast & efficient for basic chat applications"
                 category="Chat"
                 price="₹0.10 input / ₹0.12 output"
                 buttonText="Know More"
                 imageUrl="/cream-bg.png"
-                imageAlt="NGen3.9-Lite Model"
-                href="/models/ngen39-lite"
+                imageAlt="NGen3.9-Lite Chat Model"
+                href="/models/ngen3.9-lite-chat"
               />
             </div>
             
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.9-Pro"
-                subtitle="Advanced conversational AI"
+                title="NGen3.9-Pro Chat"
+                subtitle="Strong contextual and logical understanding"
                 category="Chat"
                 price="₹0.33 input / ₹0.50 output"
                 buttonText="Know More"
                 imageUrl="/blue-bg.png"
-                imageAlt="NGen3.9-Pro Model"
-                href="/models/ngen39-pro"
+                imageAlt="NGen3.9-Pro Chat Model"
+                href="/models/ngen3.9-pro-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.9-Lite-2006-Preview"
-                subtitle="Preview version of Lite"
+                title="NGen3.9-Lite-2006-Preview Chat"
+                subtitle="Preview version with latest experimental features"
                 category="Chat"
                 price="₹0.08 input / ₹0.10 output"
                 buttonText="Know More"
                 imageUrl="/pink-bg.png"
-                imageAlt="NGen3.9-Lite Preview Model"
-                href="/models/ngen39-lite-preview"
+                imageAlt="NGen3.9-Lite-2006-Preview Chat Model"
+                href="/models/ngen3.9-lite-2006-preview-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.9-Pro-2406-Preview"
-                subtitle="Preview version of Pro"
+                title="NGen3.9-Pro-2406-Preview Chat"
+                subtitle="Preview version with enhanced capabilities"
                 category="Chat"
                 price="₹0.25 input / ₹0.37 output"
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
-                imageAlt="NGen3.9-Pro Preview Model"
-                href="/models/ngen39-pro-preview"
+                imageAlt="NGen3.9-Pro-2406-Preview Chat Model"
+                href="/models/ngen3.9-pro-2406-preview-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.9-Max-v2-128K-Preview"
-                subtitle="Max context 128K model"
+                title="NGen3.9-Max-v2-128K-Preview Chat"
+                subtitle="Handles long documents and books"
                 category="Chat"
                 price="₹0.66 input / ₹1.00 output"
                 buttonText="Know More"
                 imageUrl="/dark-green-bg.png"
-                imageAlt="NGen3.9-Max Model"
-                href="/models/ngen39-max-preview"
+                imageAlt="NGen3.9-Max-v2-128K-Preview Chat Model"
+                href="/models/ngen3.9-max-v2-128k-preview-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3.9-Max-Stable-v3"
-                subtitle="Stable enterprise version"
+                title="NGen3.9-Max-Stable-v3 Chat"
+                subtitle="Stable enterprise version for production workloads"
                 category="Chat"
                 price="₹0.83 input / ₹1.25 output"
                 buttonText="Know More"
                 imageUrl="/gold-bg.png"
-                imageAlt="NGen3.9-Max Stable Model"
-                href="/models/ngen39-max-stable"
+                imageAlt="NGen3.9-Max-Stable-v3 Chat Model"
+                href="/models/ngen3.9-max-stable-v3-chat"
               />
             </div>
           </div>
@@ -420,53 +407,53 @@ export default function ModelsPage() {
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3-7B-0625"
-                subtitle="7B parameter efficient model"
+                title="NGen3-7B-0625 Chat"
+                subtitle="High-efficiency conversational model"
                 category="Chat"
                 price="₹0.42 input / ₹0.58 output"
                 buttonText="Know More"
                 imageUrl="/dark-green-bg.png"
-                imageAlt="NGen3-7B Model"
-                href="/models/ngen3-7b-0625"
+                imageAlt="NGen3-7B-0625 Chat Model"
+                href="/models/ngen3-7b-0625-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3-7B-0525-Preview"
-                subtitle="Preview version of 7B"
+                title="NGen3-7B-0525-Preview Chat"
+                subtitle="Preview version of 7B parameter model"
                 category="Chat"
                 price="₹0.33 input / ₹0.50 output"
                 buttonText="Know More"
                 imageUrl="/pink-strong-bg.png"
-                imageAlt="NGen3-7B Preview Model"
-                href="/models/ngen3-7b-preview"
+                imageAlt="NGen3-7B-0525-Preview Chat Model"
+                href="/models/ngen3-7b-0525-preview-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3-1B"
-                subtitle="1B parameter lightweight model"
+                title="NGen3-1B Chat"
+                subtitle="Compact 1B parameter model for edge deployment"
                 category="Chat"
                 price="₹0.20 input / ₹0.30 output"
                 buttonText="Know More"
                 imageUrl="/brown-blue-bg.png"
-                imageAlt="NGen3-1B Model"
-                href="/models/ngen3-1b"
+                imageAlt="NGen3-1B Chat Model"
+                href="/models/ngen3-1b-chat"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
-                title="NGen3-1B-it"
-                subtitle="1B parameter instruction-tuned"
+                title="NGen3-1B-it Chat"
+                subtitle="Instruction-tuned variant for better task performance"
                 category="Chat"
                 price="₹0.25 input / ₹0.35 output"
                 buttonText="Know More"
                 imageUrl="/violet-purple-bg.png"
-                imageAlt="NGen3-1B-it Model"
-                href="/models/ngen3-1b-it"
+                imageAlt="NGen3-1B-it Chat Model"
+                href="/models/ngen3-1b-it-chat"
               />
             </div>
           </div>
@@ -585,52 +572,52 @@ export default function ModelsPage() {
             <div className="w-full max-w-sm">
               <FlightCard
                 title="WebSearch-1"
-                subtitle="Web search & information retrieval"
+                subtitle="Real-time web search with source citations"
                 category="Search"
                 price="₹0.16 per query"
                 buttonText="Know More"
                 imageUrl="/blue-bg.png"
                 imageAlt="WebSearch-1 Model"
-                href="/models/websearch-1"
+                href="/models/websearch-1-search"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
                 title="Scientist-1"
-                subtitle="Scientific reasoning & analysis"
+                subtitle="Specialized for scientific research and analysis"
                 category="Research"
                 price="₹0.50 per query"
                 buttonText="Know More"
                 imageUrl="/dark-green-bg.png"
                 imageAlt="Scientist-1 Model"
-                href="/models/scientist-1"
+                href="/models/scientist-1-research"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
                 title="Code-1"
-                subtitle="Code generation and debugging"
+                subtitle="Supports 30+ programming languages with advanced debugging"
                 category="Code"
                 price="₹0.42 input / ₹0.58 output"
                 buttonText="Know More"
                 imageUrl="/green-bg.png"
                 imageAlt="Code-1 Model"
-                href="/models/code-1"
+                href="/models/code-1-code"
               />
             </div>
 
             <div className="w-full max-w-sm">
               <FlightCard
                 title="MultiAgent-1"
-                subtitle="Multi-agent coordination"
+                subtitle="Coordinates multiple AI agents for complex tasks"
                 category="Agent"
                 price="₹0.83 input / ₹1.25 output"
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
                 imageAlt="MultiAgent-1 Model"
-                href="/models/multiagent-1"
+                href="/models/multiagent-1-agent"
               />
             </div>
 
