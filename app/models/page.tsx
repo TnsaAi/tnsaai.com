@@ -69,7 +69,7 @@ export default function ModelsPage() {
                 buttonText="Know More"
                 imageUrl="/purple-bg.png"
                 imageAlt="NGen3.1-Pro Multimodal Model"
-                href="/models/ngen3.1-pro-multimodal"
+                href="/models/ngen3.1-pro"
               />
             </div>
           </div>
