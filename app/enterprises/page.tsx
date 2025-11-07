@@ -1,48 +1,34 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { FlightCard } from '@/components/ui/flight-card'
 
 export default function EnterprisesPage() {
   return (
-    <div className="bg-white">
-      {/* Hero section */}
-      <div className="bg-white p-1 h-screen flex items-center justify-center">
-        <div
-          className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
-          style={{
-            backgroundImage: 'url(/green-blue-bg.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-            <h1 className="text-5xl font-medium tracking-tight mb-16 font-sans bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent sm:text-6xl lg:text-7xl xl:text-8xl">
-              Enterprise AI<br />
-              Solutions.
-            </h1>
-          </div>
+    <div className="bg-white min-h-screen">
+      <div className="bg-white pb-16 flex items-center justify-center" style={{ paddingTop: '222px' }}>
+        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+          <h1 className="text-5xl font-normal tracking-tight font-sans text-black sm:text-6xl lg:text-7xl">
+            Enterprise.
+          </h1>
         </div>
       </div>
 
-      {/* Custom AI Services Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Custom AI Services.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Tailored solutions for your enterprise needs.</p>
+            <h2 className="text-3xl tracking-tight text-gray-900 mb-4 sm:text-4xl">Custom AI Services.</h2>
+            <p className="text-lg text-gray-900 sm:text-xl">Tailored solutions for your enterprise needs</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+          <div className="flex flex-wrap justify-center" style={{ gap: '20px' }}>
             <FlightCard
               title="Custom Fine-Tuning"
               subtitle="Domain-Specific Training"
               category="Enterprise Service"
               price="Custom Quote"
               buttonText="Learn more"
-              imageUrl="/emerald-blue-bg.png"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/susan-wilkinson-6YNPuJ3Ybac-unsplash.jpg"
               imageAlt="Custom Fine-Tuning"
               href="/enterprises/fine-tuning"
             />
@@ -53,7 +39,7 @@ export default function EnterprisesPage() {
               category="Enterprise Service"
               price="Custom Quote"
               buttonText="Learn more"
-              imageUrl="/violet-purple-bg.png"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/brandon-stecz-9rX32anLiVA-unsplash.jpg"
               imageAlt="Pre-Training Services"
               href="/enterprises/pre-training"
             />
@@ -64,7 +50,7 @@ export default function EnterprisesPage() {
               category="Enterprise Service"
               price="Custom Quote"
               buttonText="Learn more"
-              imageUrl="/green-blue-bg.png"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-eva-bronzini-7605542.jpg"
               imageAlt="Infrastructure Support"
               href="/enterprises/infrastructure"
             />
@@ -75,7 +61,7 @@ export default function EnterprisesPage() {
               category="Enterprise Service"
               price="Custom Quote"
               buttonText="Learn more"
-              imageUrl="/pink-bg.png"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-alexant-16738884.jpg"
               imageAlt="AI Consulting"
               href="/enterprises/consulting"
             />
@@ -86,7 +72,7 @@ export default function EnterprisesPage() {
               category="Enterprise Service"
               price="Custom Quote"
               buttonText="Learn more"
-              imageUrl="/brown-bg.png"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-karola-g-4046791.jpg"
               imageAlt="Data Engineering"
               href="/enterprises/data-engineering"
             />
@@ -97,7 +83,7 @@ export default function EnterprisesPage() {
               category="Enterprise Service"
               price="Custom Quote"
               buttonText="Learn more"
-              imageUrl="/black-bg.png"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-karola-g-4046757.jpg"
               imageAlt="Model Deployment"
               href="/enterprises/deployment"
             />
@@ -105,81 +91,15 @@ export default function EnterprisesPage() {
         </div>
       </div>
 
-      {/* Industry Solutions Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Industry Solutions.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Specialized AI for every sector.</p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
-            <FlightCard
-              title="Financial Services"
-              subtitle="Risk & Compliance"
-              category="Industry Solution"
-              price="Custom Quote"
-              buttonText="Learn more"
-              imageUrl="/blue-bg.png"
-              imageAlt="Financial Services AI"
-              href="/enterprises/consulting"
-            />
-
-            <FlightCard
-              title="Healthcare"
-              subtitle="Medical AI"
-              category="Industry Solution"
-              price="Custom Quote"
-              buttonText="Learn more"
-              imageUrl="/green-bg.png"
-              imageAlt="Healthcare AI"
-              href="/enterprises/consulting"
-            />
-
-            <FlightCard
-              title="Education"
-              subtitle="Learning AI"
-              category="Industry Solution"
-              price="Custom Quote"
-              buttonText="Learn more"
-              imageUrl="/purple-bg.png"
-              imageAlt="Education AI"
-              href="/enterprises/consulting"
-            />
-          </div>
-        </div>
-      </div>
-
-
-
-      {/* Action Buttons */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 sm:text-4xl">Ready to Transform Your Enterprise?</h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Schedule a consultation to discuss your specific needs and see how TNSA AI can drive your business forward.
-            </p>
-            <div className="flex justify-center gap-4">
-              <Link
-                href="mailto:enterprise@tnsaai.com"
-                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-              >
-                Schedule Consultation →
-              </Link>
-              <Link
-                href="https://platform.tnsaai.com"
-                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-              >
-                Try API →
-              </Link>
-              <Link
-                href="/products"
-                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-              >
-                View Products →
-              </Link>
-            </div>
+          <div className="bg-gray-50 rounded-[40px] flex flex-col items-center justify-center" style={{width: '100%', maxWidth: '1028px', height: '575px', margin: '0 auto'}}>
+            <h2 className="text-5xl font-normal text-center mb-8 text-black">
+              Ready to transform your enterprise?
+            </h2>
+            <Link href="/company/contact" className="px-8 py-3 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              Contact Sales
+            </Link>
           </div>
         </div>
       </div>

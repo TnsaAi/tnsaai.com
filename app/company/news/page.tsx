@@ -2,150 +2,80 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { FlightCard } from '@/components/ui/flight-card'
 
 const papers = [
   {
     title: 'NGen4 Atom Chat Launch',
     description: 'Introducing TNSA\'s most massive model - 10X larger than our biggest open-weight model NGen3 10B.',
     href: '/company/news/ngen4-atom-chat-launch',
-    backgroundImage: '/dark-green-bg.png',
+    backgroundImage: 'https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-zaksheuskaya-709412-1568607.jpg',
   },
   {
     title: 'Transforming Government Services with Large Language Models',
     description: 'A comprehensive look at how LLMs can revolutionize government services and public administration.',
     href: '/company/news/transforming-government-services-with-large-language-models',
-    backgroundImage: '/blue-bg.png',
+    backgroundImage: 'https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-artempodrez-7233314.jpg',
   },
   {
     title: 'NGen 3.1 Models Series Launch',
     description: 'Introducing the next generation of frontier AI models with breakthrough performance across all benchmarks.',
     href: '/company/news/ngen3.1-models-series-launch',
-    backgroundImage: '/blue-bg.png',
+    backgroundImage: 'https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-pixabay-355288.jpg',
   },
   {
     title: 'TNSA X Microsoft for Startups & Google TPU Research Cloud',
     description: 'TNSA joins forces with Microsoft for Startups and Google TPU Research Cloud to accelerate AI research.',
     href: '/company/news/tnsa-x-microsoft-for-startups-tnsa-x-google-tpu-research-cloud',
-    backgroundImage: '/blue-bg.png',
+    backgroundImage: 'https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-steve-1509534.jpg',
   },
   {
     title: 'TNSA API & GensChat are Live',
     description: 'The TNSA API and GensChat are now available for developers and users.',
     href: '/company/news/tnsa-api-is-live-genschats-is-live',
-    backgroundImage: '/pink-bg.png',
+    backgroundImage: 'https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-diva-34592788.jpg',
   },
   {
     title: 'A Guide to Build Agents with NGen and MCP',
     description: 'New practical guide on building agents with NGen and the Model Context Protocol (MCP).',
     href: '/company/news/a-guide-to-build-agents-with-ngen-and-mcp',
-    backgroundImage: '/blue-bg.png',
-  },
-  {
-    title: 'Computational Hardware and Data Foundations for Sustainable Superintelligence',
-    description: 'Navigating Energy, Multimodality, and Ethical Data at Scale.',
-    href: '/research/computational-hardware-and-data-foundations-for-sustainable-superintelligence',
-    backgroundImage: '/green-blue-bg.png',
-  },
-  {
-    title: 'Adaptive Sparse Transformer Blocks',
-    description: 'A Paradigm Shift for Efficient Large Language Models.',
-    href: '/research/adaptive-sparse-transformer-blocks',
-    backgroundImage: '/dark-green-bg.png',
-  },
-  {
-    title: 'Cross Modal Contrastive Curriculum Learning',
-    description: 'Enhancing Multi Modal Alignment Through Progressive Difficulty.',
-    href: '/research/cross-modal-contrastive-curriculum-learning',
-    backgroundImage: '/brown-blue-bg.png',
-  },
-  {
-    title: 'Interpretable Attention Visualization Module',
-    description: 'Transforming Raw Attention into Human Readable Explanations.',
-    href: '/research/interpretable-attention-visualization-module',
-    backgroundImage: '/pink-strong-bg.png',
-  },
-  {
-    title: 'Quantum Language Models',
-    description: 'Architectures, Applications, and a Practical Approach to Quantum Tensor Conversion for Enhanced Efficiency.',
-    href: '/research/quantum-language-models',
-    backgroundImage: '/gold-bg.png',
-  },
-  {
-    title: 'LLMs can be Creative and Independent',
-    description: 'Exploring the creative and independent capabilities of Large Language Models.',
-    href: '/research/llms-can-be-creative-and-independent',
-    backgroundImage: '/violet-purple-bg.png',
-  },
-  {
-    title: 'Quantum Intelligence and Future AI Systems',
-    description: 'A look into the future of AI with Quantum Intelligence.',
-    href: '/research/quantum-intelligence-and-future-ai-systems',
-    backgroundImage: '/black-violet-bg.png',
+    backgroundImage: 'https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-diva-34592795.jpg',
   },
 ]
 
 export default function NewsPage() {
   return (
     <div className="bg-white">
-      {/* Hero section */}
-      <div className="bg-white p-1 h-screen flex items-center justify-center">
-        <div 
-          className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
-          style={{
-            backgroundImage: 'url(/bw-bg.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-            <h1 className="text-5xl font-medium tracking-tight mb-16 font-sans bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent sm:text-6xl lg:text-7xl xl:text-8xl">
-              News.
-            </h1>
-          </div>
+      <div className="bg-white pb-16 flex items-center justify-center" style={{ paddingTop: '222px' }}>
+        <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+          <h1 className="text-5xl font-normal tracking-tight font-sans text-black sm:text-6xl lg:text-7xl">
+            News.
+          </h1>
         </div>
       </div>
 
-      {/* Papers List */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Our Latest Publications.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">
-              Explore our latest research papers and publications.
+            <h2 className="text-3xl tracking-tight text-gray-900 mb-4 sm:text-4xl">Latest Updates.</h2>
+            <p className="text-lg text-gray-900 sm:text-xl">
+              Stay updated with our latest announcements and developments.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="flex flex-wrap justify-center" style={{ gap: '20px' }}>
             {papers.map((paper) => (
-              <Link key={paper.title} href={paper.href}>
-                <div
-                  className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[400px] flex flex-col justify-between hover:scale-105 transition-transform cursor-pointer"
-                  style={{
-                    backgroundImage: `url(${paper.backgroundImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
-                  }}
-                >
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-4 text-white">{paper.title}</h3>
-                    <p className="text-white mb-6">
-                      {paper.description}
-                    </p>
-                  </div>
-                  <div className="flex justify-between items-end">
-                    <span className="text-sm font-semibold text-white">Read More →</span>
-                    <Image
-                      src="/TNSA.png"
-                      alt="TNSA"
-                      width={60}
-                      height={24}
-                      className="opacity-80"
-                    />
-                  </div>
-                </div>
-              </Link>
+              <FlightCard
+                key={paper.title}
+                title={paper.title}
+                subtitle={paper.description}
+                category="News"
+                price="Free Access"
+                buttonText="Read More"
+                imageUrl={paper.backgroundImage}
+                imageAlt={paper.title}
+                href={paper.href}
+              />
             ))}
           </div>
         </div>

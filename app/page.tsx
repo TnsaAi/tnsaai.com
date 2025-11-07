@@ -2,109 +2,123 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { PromptInputBox } from '@/components/ui/ai-prompt-box'
+import { PromptBox } from '@/components/ui/prompt-box'
 import { FlightCard } from '@/components/ui/flight-card'
 
 export default function Home() {
-  const handleSendMessage = (message: string, files?: File[]) => {
-    console.log('Message:', message);
-    console.log('Files:', files);
-    if (message.trim()) {
-      const encodedMessage = encodeURIComponent(message.trim())
+  const handleSendMessage = (prompt: string) => {
+    if (prompt.trim()) {
+      const encodedMessage = encodeURIComponent(prompt.trim())
       window.open(`https://chat.tnsaai.com/?message=${encodedMessage}`, '_blank')
     }
   }
 
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       {/* Hero section */}
-      <div className="bg-white p-1 h-screen flex items-center justify-center">
-        <div 
-          className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
-          style={{
-            backgroundImage: 'url(/black-bg.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-            <h1 className="text-5xl font-medium tracking-tight mb-16 font-sans bg-gradient-to-b from-white to-white/50 bg-clip-text text-transparent sm:text-6xl lg:text-7xl xl:text-8xl">
-              Building World&apos;s First ASI.
-            </h1>
-            
-            {/* Chat Input */}
-            <div className="mx-auto max-w-2xl">
-              <PromptInputBox 
-                onSend={handleSendMessage}
-                placeholder="Talk to GensChat"
-                className="w-full"
-              />
-            </div>
+      <div className="bg-white h-screen flex items-center justify-center">
+        <div className="w-full max-w-4xl px-6">
+          <h1 className="text-5xl font-normal text-center mb-12 text-black">
+            Building Super-Intelligence.
+          </h1>
+          
+          <PromptBox 
+            onSend={handleSendMessage}
+            placeholder="Ask me anything..."
+            className="w-full mb-8"
+          />
+          
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <Link href="https://platform.tnsaai.com" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              API Platform
+            </Link>
+            <Link href="https://chat.tnsaai.com" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              GensChat
+            </Link>
+            <Link href="/models" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              Models
+            </Link>
+            <Link href="/research" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              Research
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Models Section */}
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Models.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Best Frontier Models, Working for you.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
+          <div className="flex justify-center mb-5">
             <FlightCard
-              title="NGen 3.9 Lite"
-              subtitle="Ultra-Fast"
-              category="Real-time"
-              price="$0.10/1K tokens"
-              buttonText="Try Now"
-              imageUrl="/cream-bg.png"
-              imageAlt="NGen 3.9 Lite Model"
-              href="/models/ngen3-lite"
-            />
-
-            <FlightCard
-              title="NGen 3.9 Pro"
-              subtitle="Professional"
-              category="Enterprise"
-              price="$0.50/1K tokens"
-              buttonText="Try Now"
-              imageUrl="/blue-bg.png"
-              imageAlt="NGen 3.9 Pro Model"
-              href="/models/ngen3-pro"
-            />
-
-            <FlightCard
-              title="NGen 3.9 Max"
-              subtitle="Maximum Power"
-              category="Research-Grade"
-              price="$1.00/1K tokens"
-              buttonText="Try Now"
-              imageUrl="/purple-bg.png"
-              imageAlt="NGen 3.9 Max Model"
-              href="/models/ngen3-max"
+              title="IGen 1"
+              imageUrl="https://igen.tnsaai.com/images/igen1/igen1-7.png"
+              imageAlt="IGen 1"
+              href="/models/igen-1-image"
+              variant="large"
             />
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex justify-center gap-4 mt-12">
+          <div className="flex justify-center gap-5">
+            <FlightCard
+              title="NGen 3.5 series Comes In!"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-falling4utah-1934846.jpg"
+              imageAlt="NGen 3.5 series"
+              href="/models"
+              variant="medium"
+            />
+            <FlightCard
+              title="NGen 3.1 Pro"
+              imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-efren-ftz-365656346-14433444.jpg"
+              imageAlt="NGen 3.1 Pro"
+              href="/models/ngen3.1-pro"
+            />
+          </div>
+
+          <div className="overflow-x-auto md:overflow-x-visible -mx-6 px-6 md:mx-0 md:px-0 mt-8">
+            <div className="flex md:justify-center gap-6 min-w-max md:min-w-0">
+              <div className="w-[329px] flex-shrink-0">
+                <FlightCard
+                  title="NGen 3.9 Max"
+                  imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/mymind-tZCrFpSNiIQ-unsplash.jpg"
+                  imageAlt="NGen 3.9 Max"
+                  href="/models/ngen3.9-max-stable-v3-chat"
+                />
+              </div>
+              <div className="w-[329px] flex-shrink-0">
+                <FlightCard
+                  title="NGen 3.9 Pro"
+                  imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/blur-1721080_1280.jpg"
+                  imageAlt="NGen 3.9 Pro"
+                  href="/models/ngen3.9-pro-chat"
+                />
+              </div>
+              <div className="w-[329px] flex-shrink-0">
+                <FlightCard
+                  title="NGen 3.9 Lite"
+                  imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/milad-fakurian-iFu2HILEng8-unsplash.jpg"
+                  imageAlt="NGen 3.9 Lite"
+                  href="/models/ngen3.9-lite-chat"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center gap-4 mt-8">
             <Link
               href="/models"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
               View All Models →
             </Link>
             <Link
               href="https://platform.tnsaai.com"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
               Try API →
             </Link>
             <Link
               href="/products/genchat"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
               GenGChat →
             </Link>
@@ -115,63 +129,56 @@ export default function Home() {
       {/* Products Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Products.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Making AI accessible to All Humanity.</p>
+          <div className="mb-8 flex justify-center">
+            <div style={{ width: '1028px' }}>
+              <h2 className="text-3xl font-medium text-gray-900 mb-2">Products.</h2>
+              <p className="text-base font-medium text-gray-900">Making AI accessible to All Humanity.</p>
+            </div>
           </div>
           
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3 justify-items-center lg:gap-8 xl:gap-12">
-            <FlightCard
-              title="TNSA Platform"
-              subtitle="API Platform"
-              category="Enterprise Ready"
-              price="Free Tier"
-              buttonText="Explore platform"
-              imageUrl="/green-bg.png"
-              imageAlt="TNSA Platform"
-              href="/products/platform"
-            />
-
-            <FlightCard
-              title="GensChat"
-              subtitle="Conversational AI"
-              category="India's Own Model"
-              price="Free"
-              buttonText="Try GensChat"
-              imageUrl="/pink-strong-bg.png"
-              imageAlt="GensChat"
-              href="/products/genchat"
-            />
-
-            <FlightCard
-              title="EdgeChat"
-              subtitle="Offline AI"
-              category="Network-Free"
-              price="Coming Soon"
-              buttonText="Learn more"
-              imageUrl="/brown-blue-bg.png"
-              imageAlt="EdgeChat"
-              href="/products/edgechat"
-            />
+          <div className="flex justify-center gap-6">
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="TNSA Platform"
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/muhammad-ridwan-imam-fajar-meqxXc9zPGI-unsplash.jpg"
+                imageAlt="TNSA Platform"
+                href="/products/platform"
+              />
+            </div>
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="GensChat"
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/omid-armin-Nsn9FY4JGMs-unsplash.jpg"
+                imageAlt="GensChat"
+                href="/products/genchat"
+              />
+            </div>
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="EdgeChat"
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/martin-de-arriba-J6kz1RK_kFc-unsplash.jpg"
+                imageAlt="EdgeChat"
+                href="/products/edgechat"
+              />
+            </div>
           </div>
 
-          {/* Action Buttons */}
           <div className="flex justify-center gap-4 mt-12">
             <Link
               href="/products"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
               View All Products →
             </Link>
             <Link
               href="https://platform.tnsaai.com"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
               Try API →
             </Link>
             <Link
               href="/products/genchat"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
               GensChat →
             </Link>
@@ -179,171 +186,75 @@ export default function Home() {
         </div>
       </div>
 
-      {/* AI Companies Comparison Table Section */}
+      {/* Researches Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">AI Companies Comparison.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Compare leading AI companies and their flagship models.</p>
+          <div className="mb-8 flex justify-center">
+            <div style={{ width: '1028px' }}>
+              <h2 className="text-3xl font-medium text-gray-900 mb-2">Researches that Help us.</h2>
+            </div>
           </div>
           
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-xl bg-white">
-              <thead>
-                <tr className="bg-gradient-to-r from-gray-50 to-gray-100">
-                  <th className="px-6 py-4 text-left text-sm font-bold text-gray-900 border-r border-gray-200">Aspect</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-green-700 bg-green-50">TNSA</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">OpenAI</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">DeepMind</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">Anthropic</th>
-                  <th className="px-6 py-4 text-left text-sm font-bold text-gray-900">DeepSeek</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Founded</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">2021, India</td>
-                  <td className="px-6 py-4 text-gray-700">2015, USA</td>
-                  <td className="px-6 py-4 text-gray-700">2010, UK (Google-owned)</td>
-                  <td className="px-6 py-4 text-gray-700">2021, USA</td>
-                  <td className="px-6 py-4 text-gray-700">2023, China</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Founders</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">Thishyaketh & Nachiketh Abimalla</td>
-                  <td className="px-6 py-4 text-gray-700">Elon Musk, Sam Altman, Greg Brockman</td>
-                  <td className="px-6 py-4 text-gray-700">Demis Hassabis, Shane Legg, Mustafa Suleyman</td>
-                  <td className="px-6 py-4 text-gray-700">Dario & Daniela Amodei</td>
-                  <td className="px-6 py-4 text-gray-700">Zhipu AI alumni, Jidong Sha</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Mission</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">
-                    <span className="font-semibold text-green-700">Build Super Intelligence (ASI)</span><br/>
-                    <span className="text-sm text-gray-600">1T Qubit Quantum Processor, Quantum Applied AI</span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-700">Ensure AGI benefits all humanity</td>
-                  <td className="px-6 py-4 text-gray-700">Solve intelligence → apply to science & society</td>
-                  <td className="px-6 py-4 text-gray-700">Safe, interpretable, steerable AI</td>
-                  <td className="px-6 py-4 text-gray-700">Democratize AI with efficient training</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Flagship Models</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">
-                    <span className="font-semibold text-green-700">NGen 3.9 Reasoning</span><br/>
-                    <span className="text-sm text-gray-600">NGen 3.1 Pro Multimodal, IGen 1 Nano</span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-700">GPT-4, DALL·E 3, Codex</td>
-                  <td className="px-6 py-4 text-gray-700">Gemini, AlphaFold, AlphaGo</td>
-                  <td className="px-6 py-4 text-gray-700">Claude 3.5</td>
-                  <td className="px-6 py-4 text-gray-700">DeepSeek-V3, DeepSeek-Coder</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Core Technologies</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">
-                    <span className="font-semibold text-green-700">NGen LLMs, Neura AGI</span><br/>
-                    <span className="text-sm text-gray-600">Tokenize2, IGen, OAX Framework, Quantum AI</span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-700">GPT series, Codex, DALL·E, ChatGPT</td>
-                  <td className="px-6 py-4 text-gray-700">AlphaFold (biology), Reinforcement Learning, Gemini</td>
-                  <td className="px-6 py-4 text-gray-700">Constitutional AI, Claude series</td>
-                  <td className="px-6 py-4 text-gray-700">Sparse MoE, efficient LLM training</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Enterprise Focus</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">
-                    <span className="font-semibold text-green-700">Enterprise-first</span><br/>
-                    <span className="text-sm text-gray-600">Customizable, sovereign AI</span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-700">API-first SaaS, limited customization</td>
-                  <td className="px-6 py-4 text-gray-700">Research-first, enterprise only via Google Cloud</td>
-                  <td className="px-6 py-4 text-gray-700">Safety-first APIs, not fully enterprise-driven</td>
-                  <td className="px-6 py-4 text-gray-700">Mass adoption, cost-driven AI</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Data Control</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">
-                    <span className="font-semibold text-green-700">Full ownership</span><br/>
-                    <span className="text-sm text-gray-600">Sovereign deployment</span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-700">Data hosted on OpenAI infra (Azure/US)</td>
-                  <td className="px-6 py-4 text-gray-700">Data tied to Google Cloud</td>
-                  <td className="px-6 py-4 text-gray-700">Cloud-only US infra</td>
-                  <td className="px-6 py-4 text-gray-700">China-linked infra (trust concerns)</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Pricing</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">
-                    <span className="font-semibold text-green-700">Flexible enterprise licensing</span><br/>
-                    <span className="text-sm text-gray-600">Partnerships</span>
-                  </td>
-                  <td className="px-6 py-4 text-gray-700">Subscription/API-based (per token)</td>
-                  <td className="px-6 py-4 text-gray-700">Google Cloud pricing (bundled)</td>
-                  <td className="px-6 py-4 text-gray-700">Premium API costs</td>
-                  <td className="px-6 py-4 text-gray-700">Low-cost training/inference</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors border-b border-gray-100">
-                  <td className="px-6 py-4 font-semibold text-gray-800 bg-gray-50 border-r border-gray-200">Scale</td>
-                  <td className="px-6 py-4 text-gray-700 bg-green-50/30">Small but rapidly growing</td>
-                  <td className="px-6 py-4 text-gray-700">Thousands of staff + Microsoft infra</td>
-                  <td className="px-6 py-4 text-gray-700">Global Google-scale labs</td>
-                  <td className="px-6 py-4 text-gray-700">~400 staff, scaling</td>
-                  <td className="px-6 py-4 text-gray-700">~200 engineers</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          {/* Key Differentiators */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Ultra-Fast Performance</h3>
-              <p className="text-gray-600">TNSA models deliver lightning-fast responses with optimized inference speeds.</p>
+          <div className="flex justify-center gap-6 mb-6">
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="LLMs can be Creative and Independent."
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/kukai-art-oDQqO9opEXc-unsplash.jpg"
+                imageAlt="LLMs can be Creative and Independent"
+                href="/research/llms-can-be-creative-and-independent"
+              />
             </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Cost-Effective</h3>
-              <p className="text-gray-600">Competitive pricing with enterprise-grade performance and reliability.</p>
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="Adaptive Sparse Transformer Blocks"
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/abstral-official-kzTYEGMY4N0-unsplash.jpg"
+                imageAlt="Adaptive Sparse Transformer Blocks"
+                href="/research/adaptive-sparse-transformer-blocks"
+              />
             </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Innovation Focus</h3>
-              <p className="text-gray-600">Cutting-edge research in quantum intelligence and ASI development.</p>
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="Quantum Intelligence and Future AI Systems"
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/pexels-efren-ftz-365656346-14433444.jpg"
+                imageAlt="Quantum Intelligence"
+                href="/research/quantum-intelligence-and-future-ai-systems"
+              />
             </div>
           </div>
 
-          {/* Action Buttons */}
+          <div className="flex justify-center gap-6">
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="Cross Modal Contrastive Curriculum Learning."
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/kukai-art-xS_lI4mtyzs-unsplash.jpg"
+                imageAlt="Cross Modal Contrastive Curriculum Learning"
+                href="/research/cross-modal-contrastive-curriculum-learning"
+              />
+            </div>
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="Interpretable Attention Visualization Module."
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/rini-nur-rohmah-ZkGf87NclJ0-unsplash.jpg"
+                imageAlt="Interpretable Attention Visualization Module"
+                href="/research/interpretable-attention-visualization-module"
+              />
+            </div>
+            <div style={{ width: '329px' }}>
+              <FlightCard
+                title="Quantum Language Models."
+                imageUrl="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/boliviainteligente-7TLXeqJgock-unsplash.jpg"
+                imageAlt="Quantum Language Models"
+                href="/research/quantum-language-models"
+              />
+            </div>
+          </div>
+
           <div className="flex justify-center gap-4 mt-12">
             <Link
-              href="/models"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
+              href="/research"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
             >
-              View TNSA Models →
-            </Link>
-            <Link
-              href="https://platform.tnsaai.com"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-            >
-              Try TNSA API →
-            </Link>
-            <Link
-              href="/enterprises"
-              className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-            >
-              Enterprise Solutions →
+              View All Research →
             </Link>
           </div>
         </div>
@@ -352,14 +263,15 @@ export default function Home() {
       {/* Collaborations Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">
-              Our Partners
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-3xl mx-auto">
-              TNSA is excited to announce its collaboration with Microsoft for Startups and our acceptance into the Google TPU Research Cloud program, providing us with resources to accelerate our AI research.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-8 sm:gap-x-16">
+          <div className="mb-8 flex justify-center">
+            <div style={{ width: '1028px' }}>
+              <h2 className="text-3xl font-medium text-gray-900 mb-2">Our Partners.</h2>
+              <p className="text-base font-medium text-gray-900">TNSA is excited to announce its collaboration with Microsoft for Startups and our acceptance into the Google TPU Research Cloud program.</p>
+            </div>
+          </div>
+          
+          <div className="flex justify-center">
+            <div style={{ width: '1028px' }} className="flex items-center justify-center gap-x-8">
               <Image
                 src="/ms_startups.png"
                 alt="Microsoft for Startups Logo"
@@ -375,84 +287,34 @@ export default function Home() {
                 className="object-contain"
               />
             </div>
-            <div className="mt-16">
-              <Link
-                href="/company/news/tnsa-x-microsoft-for-startups-tnsa-x-google-tpu-research-cloud"
-                className="rounded-md bg-black px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-              >
-                Read the Announcement →
-              </Link>
-            </div>
+          </div>
+
+          <div className="flex justify-center gap-4 mt-8">
+            <Link
+              href="/company/news/tnsa-x-microsoft-for-startups-tnsa-x-google-tpu-research-cloud"
+              className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
+            >
+              Read the Announcement →
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Latest Updates Section */}
+      {/* CTA Section */}
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-6 sm:text-5xl lg:text-6xl">Latest Updates.</h2>
-            <p className="text-xl text-gray-900 font-medium sm:text-2xl lg:text-3xl">Latest News and Updates from our Lab.</p>
-          </div>
-          
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-            {/* Top Row - Two Cards */}
-            <div 
-              className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[300px] flex flex-col justify-start"
-              style={{
-                backgroundImage: 'url(/green-bg.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              <h3 className="text-2xl font-semibold mb-4">Quantum Approach for Machine Learning</h3>
-            </div>
-
-            <div 
-              className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[300px] flex flex-col justify-start"
-              style={{
-                backgroundImage: 'url(/purple-bg.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              <h3 className="text-2xl font-semibold mb-4">LLMs can be Creative and Independent</h3>
-            </div>
-
-            {/* Bottom Row - Two Cards */}
-            <div 
-              className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[300px] flex flex-col justify-start"
-              style={{
-                backgroundImage: 'url(/cream-bg.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              <h3 className="text-2xl font-semibold mb-4">How to Build AI Agents with NGen3 Models - Complete Guide</h3>
-            </div>
-
-            <div 
-              className="relative rounded-3xl overflow-hidden p-8 text-white min-h-[300px] flex flex-col justify-start"
-              style={{
-                backgroundImage: 'url(/dark-pink-bg.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
-            >
-              <div>
-                <h3 className="text-2xl font-semibold mb-4">OpenArchX v0.1.5</h3>
-                <p className="text-lg leading-relaxed">
-                  Breakthrough in Machine Learning Speed.
-                </p>
-              </div>
-            </div>
+          <div className="bg-gray-50 rounded-[40px] flex flex-col items-center justify-center" style={{width: '100%', maxWidth: '1028px', height: '575px', margin: '0 auto'}}>
+            <h2 className="text-5xl font-normal text-center mb-8 text-black">
+              Start building with TNSA today!
+            </h2>
+            <Link href="https://platform.tnsaai.com" className="px-8 py-3 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              API Platform
+            </Link>
           </div>
         </div>
       </div>
+
+
     </div>
   )
 }

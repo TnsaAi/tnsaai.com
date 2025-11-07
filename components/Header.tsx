@@ -17,124 +17,52 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 p-6">
-      <nav className="mx-auto max-w-6xl">
-        <div className="bg-white/20 backdrop-blur-md rounded-full px-8 py-4 shadow-lg">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link href="/" className="flex items-center">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                <Image
-                  src="/tnsa-logo.png"
-                  alt="TNSA AI"
-                  width={24}
-                  height={24}
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </Link>
+    <header className="fixed top-4 sm:top-6 left-0 right-0 z-50 px-3 sm:px-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between lg:justify-center gap-2 sm:gap-3">
+        <nav className="bg-white shadow-sm border border-gray-100 flex items-center justify-center w-20 h-12 sm:w-28 sm:h-[60px] rounded-full sm:rounded-[40px]">
+          <Link href="/">
+            <Image src="/TNSA.svg" alt="TNSA" width={60} height={30} className="w-10 sm:w-[60px]" />
+          </Link>
+        </nav>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-8">
+        <nav className="hidden lg:flex bg-white shadow-sm border border-gray-100" style={{width: '594px', height: '60px', borderRadius: '40px', padding: '5px 7px'}}>
+          <div className="flex items-center justify-between w-full">
+            <div className="flex items-center" style={{gap: '17px', paddingLeft: '50px'}}>
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm font-medium text-gray-900 hover:text-gray-700 transition-colors"
-                >
+                <Link key={item.name} href={item.href} className="text-sm text-black hover:text-gray-600">
                   {item.name}
                 </Link>
               ))}
             </div>
-
-            {/* CTA Buttons */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-3">
-              <Link
-                href="https://platform.tnsaai.com"
-                className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 rounded-full transition-all"
-              >
-                Try API
-              </Link>
-              <Link
-                href="https://chat.tnsaai.com"
-                className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 rounded-full transition-all"
-              >
-                GensChat
-              </Link>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="flex lg:hidden">
-              <button
-                type="button"
-                className="text-gray-900 hover:text-gray-700"
-                onClick={() => setMobileMenuOpen(true)}
-              >
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
+            <Link href="https://platform.tnsaai.com" className="flex items-center justify-center text-sm text-white bg-black hover:bg-gray-900" style={{width: '102px', height: '50px', borderRadius: '40px'}}>
+              Login
+            </Link>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      {/* Mobile menu */}
+        <button type="button" className="lg:hidden bg-white rounded-full p-2 sm:p-3 shadow-sm border border-gray-100" onClick={() => setMobileMenuOpen(true)} aria-label="Open menu">
+          <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+        </button>
+      </div>
+
       {mobileMenuOpen && (
-        <div className="lg:hidden">
-          <div className="fixed inset-0 z-50 bg-gray-900/80 backdrop-blur-sm" onClick={() => setMobileMenuOpen(false)} />
-          <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm border-l border-white/20">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center">
-                <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                  <Image
-                    src="/tnsa-logo.png"
-                    alt="TNSA AI"
-                    width={24}
-                    height={24}
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-              </Link>
-              <button
-                type="button"
-                className="text-white/90 hover:text-white"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+        <div className="lg:hidden fixed inset-0 z-[60]">
+          <div className="fixed inset-0 bg-black/50" onClick={() => setMobileMenuOpen(false)} />
+          <div className="fixed right-0 top-0 h-full w-72 bg-white p-6 shadow-xl overflow-y-auto">
+            <div className="flex justify-end mb-8">
+              <button onClick={() => setMobileMenuOpen(false)} className="p-2 hover:bg-gray-100 rounded-full" aria-label="Close menu">
+                <XMarkIcon className="h-6 w-6" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-white/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-white/10"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-                <div className="py-6 space-y-2">
-                  <Link
-                    href="https://platform.tnsaai.com"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-white/10"
-                  >
-                    Try API
-                  </Link>
-                  <Link
-                    href="/products/genchat"
-                    className="block rounded-md bg-white px-3.5 py-2.5 text-center text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100"
-                  >
-                    GenGChat
-                  </Link>
-                </div>
-              </div>
+            <div className="flex flex-col gap-6">
+              {navigation.map((item) => (
+                <Link key={item.name} href={item.href} className="text-base font-medium text-gray-900 hover:text-gray-600 py-2" onClick={() => setMobileMenuOpen(false)}>
+                  {item.name}
+                </Link>
+              ))}
+              <Link href="https://platform.tnsaai.com" className="mt-4 px-6 py-3 text-sm font-medium text-white bg-black rounded-full text-center hover:bg-gray-900" onClick={() => setMobileMenuOpen(false)}>
+                Login
+              </Link>
             </div>
           </div>
         </div>

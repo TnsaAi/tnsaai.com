@@ -5,65 +5,56 @@ import Image from 'next/image'
 
 export default function StellarNanoPage() {
   return (
-    <div className="bg-white min-h-screen">
-      <div className="bg-white p-1 h-screen flex items-center justify-center">
-        <div 
-          className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
-          style={{
-            backgroundImage: 'url(/purple-bg.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
-            <h1 className="text-5xl font-medium tracking-tight mb-8 font-sans sm:text-6xl lg:text-7xl xl:text-8xl">
-              Stellar Nano
-            </h1>
-            <p className="text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
-              Ultra-compact Stellar model with powerful analytical and multimodal capabilities, perfect for edge computing and resource-constrained environments.
+    <div className="bg-white min-h-screen" style={{ paddingTop: '186px' }}>
+      <div className="mx-auto max-w-4xl px-6">
+        <div className="text-center">
+          <p className="text-sm text-gray-500">January 2025</p>
+          <h1 className="text-4xl font-normal text-black" style={{ marginTop: '0px', marginBottom: '72px' }}>Stellar Nano</h1>
+        </div>
+
+        <div className="relative w-full max-w-[1028px] mx-auto mb-16 aspect-[1028/560]">
+          <Image
+            src="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/boliviainteligente-UrOeJ0cLXAw-unsplash.jpg"
+            alt="Stellar Nano"
+            fill
+            priority
+            className="object-cover rounded-[40px]"
+          />
+        </div>
+      </div>
+
+      <div className="bg-white">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Stellar Nano is an ultra-compact edge-native reasoning model, optimized for deployment on resource-constrained devices while maintaining intelligent capabilities.
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-3xl mx-auto">
-              <div className="text-center">
-                <h3 className="text-2xl font-semibold mb-4">Ultra-Compact</h3>
-                <p className="text-lg opacity-90">Nano-scale efficiency with maximum capability density</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-semibold mb-4">Edge-Native</h3>
-                <p className="text-lg opacity-90">Purpose-built for IoT and embedded systems</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-2xl font-semibold mb-4">Resource Smart</h3>
-                <p className="text-lg opacity-90">Intelligent resource management for constrained environments</p>
-              </div>
-            </div>
-
-            <div className="flex justify-center gap-4 mb-8">
-              <Link
-                href="https://platform.tnsaai.com"
-                className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
-              >
-                Try API →
-              </Link>
-              <Link
-                href="/developers"
-                className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
-              >
-                Documentation →
-              </Link>
-            </div>
-
-            <div className="flex justify-center">
-              <Image
-                src="/TNSA.png"
-                alt="TNSA"
-                width={80}
-                height={32}
-                className="opacity-80"
-              />
-            </div>
           </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Key Capabilities.</h2>
+            <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
+              <li>Ultra-compact edge-native model</li>
+              <li>Optimized for resource-constrained devices</li>
+              <li>Efficient reasoning capabilities</li>
+              <li>Minimal resource footprint</li>
+            </ul>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Pricing.</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              $0.15 per 1K tokens
+            </p>
+          </div>
+
+          <div className="flex justify-center" style={{ marginBottom: '77px' }}>
+            <Link href="https://platform.tnsaai.com" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              Try on API Platform →
+            </Link>
+          </div>
+
         </div>
       </div>
     </div>

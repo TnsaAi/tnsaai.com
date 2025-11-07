@@ -5,173 +5,163 @@ import Image from 'next/image'
 
 export default function NGen39Pro2406PreviewChatPage() {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Hero Banner */}
-      <div className="bg-white p-1 h-screen flex items-center justify-center">
-        <div
-          className="relative isolate w-full h-full flex items-center justify-center rounded-3xl overflow-hidden border border-gray-200"
-          style={{
-            backgroundImage: 'url(/purple-bg.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        >
-          <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
-            <h1 className="text-5xl font-medium tracking-tight mb-8 font-sans sm:text-6xl lg:text-7xl xl:text-8xl">
-              NGen3.9-Pro-2406-Preview Chat
-            </h1>
-            <p className="text-xl mb-12 leading-relaxed max-w-2xl mx-auto">
-              Preview version with enhanced capabilities.
-            </p>
+    <div className="bg-white min-h-screen" style={{ paddingTop: '186px' }}>
+      <div className="mx-auto max-w-4xl px-6">
+        <div className="text-center">
+          <p className="text-sm text-gray-500">January 2025</p>
+          <h1 className="text-4xl font-normal text-black" style={{ marginTop: '0px', marginBottom: '72px' }}>NGen 3.9 Pro 2406 Preview</h1>
+        </div>
 
-            <div className="flex justify-center gap-4 mb-8">
-              <Link
-                href="https://platform.tnsaai.com"
-                className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
-              >
-                Try API →
-              </Link>
-              <Link
-                href="/developers"
-                className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
-              >
-                Documentation →
-              </Link>
-            </div>
-
-            <div className="flex justify-center">
-              <Image
-                src="/TNSA.png"
-                alt="TNSA"
-                width={80}
-                height={32}
-                className="opacity-80"
-              />
-            </div>
-          </div>
+        <div className="relative w-full max-w-[1028px] mx-auto mb-16 aspect-[1028/560]">
+          <Image
+            src="https://raw.githubusercontent.com/TnsaAi/images-urls/refs/heads/main/vincent-maufay-tfo-l7oHZcw-unsplash.jpg"
+            alt="NGen 3.9 Pro 2406 Preview"
+            fill
+            priority
+            className="object-cover rounded-[40px]"
+          />
         </div>
       </div>
 
-      {/* Content Sections */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-
-          {/* Key Features */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Key Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6 rounded-2xl bg-gray-50">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Advanced Preview Features</h3>
-                <p className="text-gray-600">Access to the latest and most advanced features in preview.</p>
-              </div>
-              <div className="text-center p-6 rounded-2xl bg-gray-50">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Enhanced Reasoning</h3>
-                <p className="text-gray-600">Experience the next level of AI reasoning and problem-solving.</p>
-              </div>
-              <div className="text-center p-6 rounded-2xl bg-gray-50">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2_0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Beta Access</h3>
-                <p className="text-gray-600">Be part of the exclusive group of users to test and provide feedback on the Pro preview.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Pricing */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Pricing</h2>
-            <div className="bg-orange-50 rounded-2xl p-8 max-w-2xl mx-auto text-center">
-              <h3 className="text-xl font-semibold mb-4">NGen3.9-Pro-2406-Preview Chat</h3>
-              <div className="grid grid-cols-2 gap-8 mb-6">
-                <div>
-                  <div className="text-3xl font-bold text-orange-600">₹0.25</div>
-                  <div className="text-sm text-gray-600">Input / 1K tokens</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-orange-600">₹0.37</div>
-                  <div className="text-sm text-gray-600">Output / 1K tokens</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Technical Specifications */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Technical Specifications</h2>
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">Limits & Specifications</h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Context Length: 256K tokens</li>
-                    <li>• Rate Limit: 500 RPM</li>
-                    <li>• Max Generation: 32K tokens</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-4">Model Architecture</h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Transformer-based architecture</li>
-                    <li>• Enhanced reasoning capabilities</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Use Cases */}
-          <div className="mb-24">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-12 text-center">Ideal Use Cases</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="p-6 border border-gray-200 rounded-xl">
-                <h3 className="text-lg font-semibold mb-3">Advanced Prototyping</h3>
-                <p className="text-gray-600">Build and test sophisticated AI applications with the latest features.</p>
-              </div>
-              <div className="p-6 border border-gray-200 rounded-xl">
-                <h3 className="text-lg font-semibold mb-3">Complex Problem Solving</h3>
-                <p className="text-gray-600">Tackle challenging problems that require advanced reasoning and understanding.</p>
-              </div>
-              <div className="p-6 border border-gray-200 rounded-xl">
-                <h3 className="text-lg font-semibold mb-3">Exploratory Research</h3>
-                <p className="text-gray-600">Push the boundaries of AI by exploring the capabilities of our most advanced preview model.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Getting Started */}
-          <div className="text-center bg-gray-50 rounded-2xl p-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">Ready to Get Started?</h2>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Get started with NGen3.9-Pro-2406-Preview Chat and explore the future of AI.
+      <div className="bg-white">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              NGen 3.9 Pro 2406 Preview delivers enhanced capabilities with advanced preview features, offering exclusive access to the next level of AI reasoning and problem-solving.
             </p>
-            <div className="flex justify-center gap-4">
-              <Link
-                href="https://platform.tnsaai.com"
-                className="rounded-md bg-black px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 transition-all"
-              >
-                Start Free Trial
-              </Link>
-              <Link
-                href="/developers"
-                className="rounded-md border border-gray-300 bg-white px-8 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-50 transition-all"
-              >
-                View Documentation
-              </Link>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Benchmark Performance.</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">Category</th>
+                    <th className="text-left py-3 px-2 font-semibold">Benchmark</th>
+                    <th className="text-right py-3 px-2 font-semibold">NGen 3.9 Pro 2406</th>
+                    <th className="text-right py-3 px-2 font-semibold text-gray-500">Llama-3.3-70B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2 font-medium" rowSpan={4}>Knowledge</td>
+                    <td className="py-3 px-2">MMLU-Pro</td>
+                    <td className="text-right py-3 px-2 font-semibold">77.2</td>
+                    <td className="text-right py-3 px-2 text-gray-500">82.5</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">MMLU-Redux</td>
+                    <td className="text-right py-3 px-2 font-semibold">90.4</td>
+                    <td className="text-right py-3 px-2 text-gray-500">–</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">GPQA</td>
+                    <td className="text-right py-3 px-2 font-semibold">63.1</td>
+                    <td className="text-right py-3 px-2 text-gray-500">69.4</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">SuperGPQA</td>
+                    <td className="text-right py-3 px-2 font-semibold">49.7</td>
+                    <td className="text-right py-3 px-2 text-gray-500">55.1</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2 font-medium" rowSpan={3}>Reasoning</td>
+                    <td className="py-3 px-2">AIME25</td>
+                    <td className="text-right py-3 px-2 font-semibold">72.6</td>
+                    <td className="text-right py-3 px-2 text-gray-500">78.5</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">HMMT25</td>
+                    <td className="text-right py-3 px-2 font-semibold">48.1</td>
+                    <td className="text-right py-3 px-2 text-gray-500">51.2</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">LiveBench</td>
+                    <td className="text-right py-3 px-2 font-semibold">69.6</td>
+                    <td className="text-right py-3 px-2 text-gray-500">75.6</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2 font-medium" rowSpan={3}>Coding</td>
+                    <td className="py-3 px-2">LiveCodeBench v6</td>
+                    <td className="text-right py-3 px-2 font-semibold">54.4</td>
+                    <td className="text-right py-3 px-2 text-gray-500">61.9</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">CFEval</td>
+                    <td className="text-right py-3 px-2 font-semibold">1771</td>
+                    <td className="text-right py-3 px-2 text-gray-500">2100</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">OJBench</td>
+                    <td className="text-right py-3 px-2 font-semibold">22.1</td>
+                    <td className="text-right py-3 px-2 text-gray-500">19.8</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2 font-medium" rowSpan={2}>Alignment</td>
+                    <td className="py-3 px-2">IFEval</td>
+                    <td className="text-right py-3 px-2 font-semibold">87.9</td>
+                    <td className="text-right py-3 px-2 text-gray-500">90</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">Arena-Hard v2</td>
+                    <td className="text-right py-3 px-2 font-semibold">19.7</td>
+                    <td className="text-right py-3 px-2 text-gray-500">39.1</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2 font-medium">Agent</td>
+                    <td className="py-3 px-2">ScreenSpot Pro</td>
+                    <td className="text-right py-3 px-2 font-semibold">64.2</td>
+                    <td className="text-right py-3 px-2 text-gray-500">–</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2 font-medium" rowSpan={4}>Multilingualism</td>
+                    <td className="py-3 px-2">MultiIF</td>
+                    <td className="text-right py-3 px-2 font-semibold">72.3</td>
+                    <td className="text-right py-3 px-2 text-gray-500">80.1</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">MMLU-ProX</td>
+                    <td className="text-right py-3 px-2 font-semibold">67</td>
+                    <td className="text-right py-3 px-2 text-gray-500">84.5</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">INCLUDE</td>
+                    <td className="text-right py-3 px-2 font-semibold">67.8</td>
+                    <td className="text-right py-3 px-2 text-gray-500">83.2</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">PolyMATH</td>
+                    <td className="text-right py-3 px-2 font-semibold">46</td>
+                    <td className="text-right py-3 px-2 text-gray-500">54.6</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Key Capabilities.</h2>
+            <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
+              <li>Advanced preview features and enhancements</li>
+              <li>Enhanced reasoning capabilities</li>
+              <li>256K token context length with 32K max generation</li>
+              <li>Beta access for early adopters</li>
+            </ul>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Pricing.</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              ₹0.25 input / ₹0.37 output per 1K tokens
+            </p>
+          </div>
+
+          <div className="flex justify-center" style={{ marginBottom: '77px' }}>
+            <Link href="https://platform.tnsaai.com" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              Try on API Platform →
+            </Link>
           </div>
 
         </div>
