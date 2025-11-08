@@ -8,7 +8,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tnsaai.com'),
-  title: 'TNSA AI - Advancing Artificial Intelligence',
+  title: 'TNSA',
   description: 'Advancing artificial intelligence through cutting-edge research, innovative models, and responsible development for a better future.',
   keywords: 'AI, artificial intelligence, machine learning, research, models, API',
   authors: [{ name: 'TNSA AI' }],
