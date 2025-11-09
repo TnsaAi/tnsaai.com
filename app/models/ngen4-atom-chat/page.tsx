@@ -97,11 +97,11 @@ export default function NGen4AtomChatPage() {
             <h2 className="text-2xl text-gray-900 mb-4">Performance Comparison.</h2>
             <div className="space-y-8">
               <div className="flex gap-2 text-xs mb-4">
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-blue-600"></div><span>NGen4-Atom-Chat</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-400"></div><span>OpenAI o3</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-300"></div><span>Gemini 2.5 Pro</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-200"></div><span>Grok-4</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-500"></div><span>gpt-oss-120b</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-blue-600"></div><span className="text-black">NGen4-Atom-Chat</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-400"></div><span className="text-black">OpenAI o3</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-300"></div><span className="text-black">Gemini 2.5 Pro</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-200"></div><span className="text-black">Grok-4</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-500"></div><span className="text-black">gpt-oss-120b</span></div>
               </div>
               
               <div>
@@ -109,8 +109,8 @@ export default function NGen4AtomChatPage() {
                 <div className="flex gap-1 items-end h-32">
                   <div className="flex-1 bg-blue-600 rounded-t" style={{height: '93%'}}><span className="text-xs text-white p-1">93</span></div>
                   <div className="flex-1 bg-gray-400 rounded-t" style={{height: '93%'}}><span className="text-xs text-white p-1">93</span></div>
-                  <div className="flex-1 bg-gray-300 rounded-t" style={{height: '86%'}}><span className="text-xs text-white p-1">86</span></div>
-                  <div className="flex-1 bg-gray-200 rounded-t" style={{height: '88%'}}><span className="text-xs p-1">88</span></div>
+                  <div className="flex-1 bg-gray-300 rounded-t" style={{height: '86%'}}><span className="text-xs text-black p-1">86</span></div>
+                  <div className="flex-1 bg-gray-200 rounded-t" style={{height: '88%'}}><span className="text-xs text-black p-1">88</span></div>
                   <div className="flex-1 bg-gray-500 rounded-t" style={{height: '90%'}}><span className="text-xs text-white p-1">90</span></div>
                 </div>
               </div>
@@ -120,8 +120,8 @@ export default function NGen4AtomChatPage() {
                 <div className="flex gap-1 items-end h-32">
                   <div className="flex-1 bg-blue-600 rounded-t" style={{height: '82%'}}><span className="text-xs text-white p-1">82</span></div>
                   <div className="flex-1 bg-gray-400 rounded-t" style={{height: '83%'}}><span className="text-xs text-white p-1">83</span></div>
-                  <div className="flex-1 bg-gray-300 rounded-t" style={{height: '22%'}}><span className="text-xs text-white p-1">22</span></div>
-                  <div className="flex-1 bg-gray-200 rounded-t" style={{height: '40%'}}><span className="text-xs p-1">40</span></div>
+                  <div className="flex-1 bg-gray-300 rounded-t" style={{height: '22%'}}><span className="text-xs text-black p-1">22</span></div>
+                  <div className="flex-1 bg-gray-200 rounded-t" style={{height: '40%'}}><span className="text-xs text-black p-1">40</span></div>
                   <div className="flex-1 bg-gray-500 rounded-t" style={{height: '80%'}}><span className="text-xs text-white p-1">80</span></div>
                 </div>
               </div>
@@ -131,8 +131,8 @@ export default function NGen4AtomChatPage() {
                 <div className="flex gap-1 items-end h-32">
                   <div className="flex-1 bg-blue-600 rounded-t" style={{height: '24%'}}><span className="text-xs text-white p-1">24</span></div>
                   <div className="flex-1 bg-gray-400 rounded-t" style={{height: '15%'}}><span className="text-xs text-white p-1">15</span></div>
-                  <div className="flex-1 bg-gray-300 rounded-t" style={{height: '5%'}}><span className="text-xs text-white p-1">0</span></div>
-                  <div className="flex-1 bg-gray-200 rounded-t" style={{height: '5%'}}><span className="text-xs p-1">0</span></div>
+                  <div className="flex-1 bg-gray-300 rounded-t" style={{height: '5%'}}><span className="text-xs text-black p-1">0</span></div>
+                  <div className="flex-1 bg-gray-200 rounded-t" style={{height: '5%'}}><span className="text-xs text-black p-1">0</span></div>
                   <div className="flex-1 bg-gray-500 rounded-t" style={{height: '15%'}}><span className="text-xs text-white p-1">15</span></div>
                 </div>
               </div>
