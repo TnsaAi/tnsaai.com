@@ -11,26 +11,51 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 
-interface BenchmarkChartProps {
-  data: {
-    name: string
-    'NGen 3.5 Pro': number
-    'NGen 3.9 Pro': number
-    'NGen 3.5 Max': number
-    'NGen 3.9 Max V3': number
-    'Llama-3.2-11B-Vision-Instruct': number
-    'Llama-3.3-70B-Instruct-FP8': number
-    'Llama-4-Maverick-17B-128E-Instruct': number
-    'DeepSeek-V3-0324': number
-  }[]
-}
+const benchmarkData = [
+  {
+    name: 'MMLU-Pro',
+    'NGen 3.9 Pro': 77.2,
+    'NGen 3.9 Max V3': 81.8,
+    'NGen 3.5 Pro': 73.4,
+    'NGen 3.5 Max': 75.8,
+    'Llama-3.2-11B-Vision-Instruct': 0,
+    'Llama-3.3-70B-Instruct-FP8': 68.9,
+    'Llama-4-Maverick-17B-128E-Instruct': 59.6,
+    'DeepSeek-V3-0324': 81.2,
+  },
+  {
+    name: 'GPQA',
+    'NGen 3.9 Pro': 63.1,
+    'NGen 3.9 Max V3': 73.8,
+    'NGen 3.5 Pro': 61.4,
+    'NGen 3.5 Max': 71.2,
+    'Llama-3.2-11B-Vision-Instruct': 26.0,
+    'Llama-3.3-70B-Instruct-FP8': 0,
+    'Llama-4-Maverick-17B-128E-Instruct': 0,
+    'DeepSeek-V3-0324': 68.4,
+  },
+  {
+    name: 'AIME25',
+    'NGen 3.9 Pro': 72.6,
+    'NGen 3.9 Max V3': 88.3,
+    'NGen 3.5 Pro': 71.6,
+    'NGen 3.5 Max': 89.1,
+  },
+  {
+    name: 'LiveCodeBench v6',
+    'NGen 3.9 Pro': 54.4,
+    'NGen 3.9 Max V3': 61.2,
+    'NGen 3.5 Pro': 55.6,
+    'NGen 3.5 Max': 62.5,
+  },
+]
 
-export default function BenchmarkChart({ data }: BenchmarkChartProps) {
+export default function BenchmarkChart() {
   return (
     <div style={{ width: '100%', height: 400 }}>
       <ResponsiveContainer>
         <BarChart
-          data={data}
+          data={benchmarkData}
           margin={{
             top: 5,
             right: 30,
