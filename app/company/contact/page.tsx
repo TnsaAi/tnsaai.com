@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Get in Touch.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              We're here to help with your AI needs and answer any questions about our products and services.
+              We&apos;re here to help with your AI needs and answer any questions about our products and services.
             </p>
           </div>
 

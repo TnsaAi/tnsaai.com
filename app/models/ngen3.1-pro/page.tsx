@@ -8,7 +8,7 @@ export default function NGen31ProPage() {
     <div className="bg-white min-h-screen" style={{ paddingTop: '186px' }}>
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center">
-          <p className="text-sm text-gray-500">January 2025</p>
+          <p className="text-sm text-gray-500">October 2025</p>
           <h1 className="text-4xl font-normal text-black" style={{ marginTop: '0px', marginBottom: '72px' }}>NGen 3.1 Pro Multimodal</h1>
         </div>
 

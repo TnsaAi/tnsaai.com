@@ -69,7 +69,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Future Directions.</h2>
             <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
-                <li>Further optimization of the gating mechanism's overhead.</li>
+                <li>Further optimization of the gating mechanism&apos;s overhead.</li>
                 <li>Development of universal sparse attention solutions that can adapt to an even wider array of tasks and architectures.</li>
                 <li>Continued exploration of hybrid architectures that combine sparse and dense attention for enhanced robustness.</li>
             </ul>

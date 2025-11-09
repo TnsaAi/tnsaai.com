@@ -28,7 +28,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Introduction.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              Today marks a significant milestone in TNSA's journey as we introduce NGen4 Atom Chat, our most massive conversational AI model to date. With over 100 billion parameters, NGen4 Atom represents a 10X scale increase from our largest open-weight model, NGen3 10B, setting new standards for conversational AI capabilities.
+              Today marks a significant milestone in TNSA&apos;s journey as we introduce NGen4 Atom Chat, our most massive conversational AI model to date. With over 100 billion parameters, NGen4 Atom represents a 10X scale increase from our largest open-weight model, NGen3 10B, setting new standards for conversational AI capabilities.
             </p>
           </div>
 

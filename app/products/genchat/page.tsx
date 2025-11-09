@@ -28,7 +28,7 @@ export default function GensChatPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              GensChat is India's own foundational model for conversational AI, built with deep understanding of Indian culture, languages, and context for authentic, natural interactions.
+              GensChat is India&apos;s own foundational model for conversational AI, built with deep understanding of Indian culture, languages, and context for authentic, natural interactions.
             </p>
           </div>
 
