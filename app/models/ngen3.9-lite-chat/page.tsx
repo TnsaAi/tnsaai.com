@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import Benchmark from '@/components/ui/Benchmark'
 
 export default function NGen39LiteChatPage() {
   return (
@@ -158,9 +159,14 @@ export default function NGen39LiteChatPage() {
             </p>
           </div>
 
+          <Benchmark />
+
           <div className="flex justify-center" style={{ marginBottom: '77px' }}>
             <Link href="https://platform.tnsaai.com" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
               Try on API Platform →
+            </Link>
+            <Link href="/A Guide to Build Agents with NGen and MCP.pdf" className="px-6 py-2.5 text-sm font-medium text-black bg-white border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+              Read full Paper →
             </Link>
           </div>
 

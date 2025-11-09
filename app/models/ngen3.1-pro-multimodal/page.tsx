@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import Benchmark from '@/components/ui/Benchmark'
 
 export default function NGen31ProMultimodalPage() {
   return (
@@ -37,6 +38,12 @@ export default function NGen31ProMultimodalPage() {
                 className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
               >
                 Documentation →
+              </Link>
+              <Link
+                href="/A Guide to Build Agents with NGen and MCP.pdf"
+                className="rounded-md bg-white/20 backdrop-blur-sm px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/30 transition-all border border-white/30"
+              >
+                Read full Paper →
               </Link>
             </div>
 
@@ -132,6 +139,8 @@ export default function NGen31ProMultimodalPage() {
               </div>
             </div>
           </div>
+
+          <Benchmark />
 
           {/* Use Cases */}
           <div className="mb-24">
