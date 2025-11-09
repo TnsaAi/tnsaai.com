@@ -97,11 +97,11 @@ export default function NGen4AtomChatPage() {
             <h2 className="text-2xl text-gray-900 mb-4">Performance Comparison.</h2>
             <div className="space-y-8">
               <div className="flex gap-2 text-xs mb-4">
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-blue-600"></div><span>NGen4-Atom-Chat</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-400"></div><span>OpenAI o3</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-300"></div><span>Gemini 2.5 Pro</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-200"></div><span>Grok-4</span></div>
-                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-500"></div><span>gpt-oss-120b</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-blue-600"></div><span className="text-black">NGen4-Atom-Chat</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-400"></div><span className="text-black">OpenAI o3</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-300"></div><span className="text-black">Gemini 2.5 Pro</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-200"></div><span className="text-black">Grok-4</span></div>
+                <div className="flex items-center gap-2"><div className="w-4 h-4 bg-gray-500"></div><span className="text-black">gpt-oss-120b</span></div>
               </div>
               
               <div>
