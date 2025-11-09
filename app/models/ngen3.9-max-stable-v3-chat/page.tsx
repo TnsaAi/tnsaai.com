@@ -26,14 +26,14 @@ export default function NGen39MaxStableV3ChatPage() {
       <div className="bg-white">
         <div className="mx-auto max-w-4xl px-6">
           <div className="mb-16">
-            <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
+            <h2 className="text-2xl text-gray-900 mb-4">Overview</h2>
             <p className="text-base text-gray-700 leading-relaxed">
               NGen 3.9 Max Stable V3 is the enterprise-grade stable version optimized for production workloads, delivering maximum reliability and performance for mission-critical applications.
             </p>
           </div>
 
           <div className="mb-16">
-            <h2 className="text-2xl text-gray-900 mb-4">Benchmark Performance.</h2>
+            <h2 className="text-2xl text-gray-900 mb-4">Benchmark Performance</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm border-collapse text-gray-900">
                 <thead>
@@ -142,17 +142,192 @@ export default function NGen39MaxStableV3ChatPage() {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-2xl text-gray-900 mb-4">Key Capabilities.</h2>
-            <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
-              <li>Enterprise-grade stability for production workloads</li>
-              <li>Superior performance across reasoning and coding tasks</li>
-              <li>256K token context length with 64K max generation</li>
-              <li>Maximum reliability for mission-critical applications</li>
-            </ul>
+            <h2 className="text-2xl text-gray-900 mb-4">NGen3 Speed Comparison</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">PERFORMANCE / MODELS</th>
+                    <th className="text-right py-3 px-2 font-semibold">NGEN 3.9 MAX V3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">TOKENS PER SECOND (TPS)</td>
+                    <td className="text-right py-3 px-2">52.59</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">PROMPT EVAL RATE (INPUT)</td>
+                    <td className="text-right py-3 px-2">1516.89</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">CONTEXT LENGTH (TOKENS)</td>
+                    <td className="text-right py-3 px-2">262,144</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div className="mb-16">
-            <h2 className="text-2xl text-gray-900 mb-4">Pricing.</h2>
+            <h2 className="text-2xl text-gray-900 mb-4">Purpose</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              This report presents a comparative analysis of model efficiency (Quality / Cost Ratio) across TNSA’s NGen 3 models and leading open-foundation LLMs such as Llama and DeepSeek.
+            </p>
+            <p className="text-base text-gray-700 leading-relaxed mt-4">
+              This version corrects for earlier conservative (higher) cost assumptions for non-TNSA models to reflect approximate normalized enterprise inference pricing and FP8-efficient cost scaling.
+            </p>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Methodology Summary</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              <strong>Formula:</strong> Quality / Cost Ratio (QCR) = Average Quality Score (Q) / Cost per 1M tokens (₹). Reported as Quality Points per ₹1,000 per 1M tokens, meaning higher is more efficient.
+            </p>
+            <p className="text-base text-gray-700 leading-relaxed mt-4">
+              <strong>Input Data:</strong>
+              <ul className="list-disc list-inside mt-2">
+                <li>Benchmarks: Average of all numeric benchmark metrics (omitting “-” or “No Support”) from client-supplied table.</li>
+                <li>Cost basis: Input and output pricing (₹ per 1K tokens), averaged, then scaled to ₹ per 1M tokens.</li>
+                <li>Revised non-TNSA model rates now reflect realistic optimized-inference values.</li>
+              </ul>
+            </p>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Pricing (Per 1,000 Tokens)</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">MODEL</th>
+                    <th className="text-right py-3 px-2 font-semibold">INPUT (₹)</th>
+                    <th className="text-right py-3 px-2 font-semibold">OUTPUT (₹)</th>
+                    <th className="text-right py-3 px-2 font-semibold">AVG (₹/1K)</th>
+                    <th className="text-right py-3 px-2 font-semibold">COST (₹/1M TOKENS)</th>
+                    <th className="text-left py-3 px-2 font-semibold">NOTE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">NGEN 3.9 MAX-STABLE-V3</td>
+                    <td className="text-right py-3 px-2">0.83</td>
+                    <td className="text-right py-3 px-2">1.25</td>
+                    <td className="text-right py-3 px-2">1.04</td>
+                    <td className="text-right py-3 px-2">1,040</td>
+                    <td className="py-3 px-2">Client input</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Average Benchmark Scores</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">Model</th>
+                    <th className="text-right py-3 px-2 font-semibold">Average Quality Score (Q)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">NGen 3.9 Max V3</td>
+                    <td className="text-right py-3 px-2">78.15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Recalculated Quality / Cost Ratios</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">RANK</th>
+                    <th className="text-left py-3 px-2 font-semibold">MODEL</th>
+                    <th className="text-right py-3 px-2 font-semibold">AVG QUALITY (Q)</th>
+                    <th className="text-right py-3 px-2 font-semibold">COST PER 1M (₹)</th>
+                    <th className="text-right py-3 px-2 font-semibold">REPORTED QCR (×1,000)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">4</td>
+                    <td className="py-3 px-2">NGen 3.9 Max V3</td>
+                    <td className="text-right py-3 px-2">78.15</td>
+                    <td className="text-right py-3 px-2">1,040</td>
+                    <td className="text-right py-3 px-2">75.1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Interpretation</h2>
+            <p className="text-base text-gray-700 leading-relaxed">
+              <strong>1. Enterprise & Stability Class Models:</strong> NGen Max models deliver superior alignment, factual robustness, and multi-modal extension but trade some cost efficiency for reliability — ideal for high-stakes enterprise use cases.
+            </p>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Client Insights</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">Model Tier</th>
+                    <th className="text-left py-3 px-2 font-semibold">Ideal Use Case</th>
+                    <th className="text-left py-3 px-2 font-semibold">Key Strength</th>
+                    <th className="text-left py-3 px-2 font-semibold">Operational Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">NGen 3.9 Max V3</td>
+                    <td className="py-3 px-2">Enterprise-grade, long-context, multilingual</td>
+                    <td className="py-3 px-2">Stability + reasoning</td>
+                    <td className="py-3 px-2">SLA-focused deployments</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">ROI Calculation</h2>
+            <p className="text-base text-gray-700 leading-relaxed mb-4">
+              For 10M tokens monthly inference (mixed input/output load):
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse text-gray-900">
+                <thead>
+                  <tr className="border-b border-gray-300">
+                    <th className="text-left py-3 px-2 font-semibold">Model</th>
+                    <th className="text-right py-3 px-2 font-semibold">Monthly Cost (₹)</th>
+                    <th className="text-right py-3 px-2 font-semibold">Effective Quality Score</th>
+                    <th className="text-right py-3 px-2 font-semibold">ROI (Quality × 10 / Cost)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-2">NGEN 3.9 MAX V3</td>
+                    <td className="text-right py-3 px-2">10,400</td>
+                    <td className="text-right py-3 px-2">78.15</td>
+                    <td className="text-right py-3 px-2">0.75</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <h2 className="text-2xl text-gray-900 mb-4">Pricing</h2>
             <p className="text-base text-gray-700 leading-relaxed">
               ₹0.83 input / ₹1.25 output per 1K tokens
             </p>
