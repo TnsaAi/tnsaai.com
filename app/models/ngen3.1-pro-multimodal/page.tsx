@@ -18,6 +18,7 @@ export default function NGen31ProMultimodalPage() {
           }}
         >
           <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
+            <p className="text-sm text-gray-500">October 2025</p>
             <h1 className="text-5xl font-medium tracking-tight mb-8 font-sans sm:text-6xl lg:text-7xl xl:text-8xl">
               NGen3.1-Pro Multimodal
             </h1>
