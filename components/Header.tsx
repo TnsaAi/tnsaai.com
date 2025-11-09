@@ -41,7 +41,7 @@ export default function Header() {
         </nav>
 
         <button type="button" className="lg:hidden bg-white rounded-full p-2 sm:p-3 shadow-sm border border-gray-100" onClick={() => setMobileMenuOpen(true)} aria-label="Open menu">
-          <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+          <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6 text-black" />
         </button>
       </div>
 
