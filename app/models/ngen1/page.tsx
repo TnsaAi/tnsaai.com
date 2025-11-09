@@ -28,7 +28,7 @@ export default function NGen1Page() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              NGen 1 is the pioneer foundation model that started it all, representing the first generation of TNSA AI's language model development and research.
+              NGen 1 is the pioneer foundation model that started it all, representing the first generation of TNSA AI&apos;s language model development and research.
             </p>
           </div>
 

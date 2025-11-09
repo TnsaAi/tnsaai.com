@@ -31,7 +31,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Abstract.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-            This report details the development of an Interpretable Attention Visualization Module, a novel plug-in designed to convert the complex, high-dimensional raw attention maps from transformer-based Large Language Models (LLMs), specifically GPT-2 small, into intuitive, human-readable explanations. The module addresses a critical need for enhanced transparency and trustworthiness in LLM applications by demystifying the internal workings of the attention mechanism. The proposed approach involves a multi-stage process: precise extraction of raw attention data, advanced clustering of tokens based on their co-attention patterns, and the generation of natural language rationales for each identified cluster. The module's effectiveness and utility will be rigorously validated through comprehensive user studies, ensuring that the explanations are not only faithful to the model's behavior but also clear and useful for human understanding. This initiative aims to provide developers and researchers with a powerful tool for debugging, validating, and fostering greater confidence in LLM predictions.
+            This report details the development of an Interpretable Attention Visualization Module, a novel plug-in designed to convert the complex, high-dimensional raw attention maps from transformer-based Large Language Models (LLMs), specifically GPT-2 small, into intuitive, human-readable explanations. The module addresses a critical need for enhanced transparency and trustworthiness in LLM applications by demystifying the internal workings of the attention mechanism. The proposed approach involves a multi-stage process: precise extraction of raw attention data, advanced clustering of tokens based on their co-attention patterns, and the generation of natural language rationales for each identified cluster. The module&apos;s effectiveness and utility will be rigorously validated through comprehensive user studies, ensuring that the explanations are not only faithful to the model&apos;s behavior but also clear and useful for human understanding. This initiative aims to provide developers and researchers with a powerful tool for debugging, validating, and fostering greater confidence in LLM predictions.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Ethics & Trust.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-            The entire purpose of the module is to enhance the transparency and trustworthiness of LLMs. By providing clear explanations for the model's behavior, it directly addresses the "black box" problem and helps to build confidence in AI systems.
+            The entire purpose of the module is to enhance the transparency and trustworthiness of LLMs. By providing clear explanations for the model&apos;s behavior, it directly addresses the &quot;black box&quot; problem and helps to build confidence in AI systems.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function PaperPage() {
                 <li>Scalability: Adapting the module to handle larger LLMs and longer input sequences.</li>
                 <li>Multimodal Attention: Extending the module to interpret attention in multimodal models (e.g., LVLMs).</li>
                 <li>Interactive Refinement: Allowing users to interactively refine the generated explanations.</li>
-                <li>Causal Interpretability: Moving beyond correlational explanations to infer causal relationships in the model's reasoning.</li>
+                <li>Causal Interpretability: Moving beyond correlational explanations to infer causal relationships in the model&apos;s reasoning.</li>
             </ul>
           </div>
 

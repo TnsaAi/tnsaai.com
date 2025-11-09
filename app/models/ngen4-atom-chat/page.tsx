@@ -31,7 +31,7 @@ export default function NGen4AtomChatPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              NGen4 Atom Chat represents a massive leap in model scale and conversational capability. Built as a non-reasoning large language model, it's designed specifically for natural, engaging conversations and content generation at unprecedented scale. At 10X the size of TNSA's biggest open-weight model NGen3 10B, NGen4 Atom Chat delivers exceptional performance in dialogue, creative writing, and general language understanding with massive-scale AI capabilities.
+              NGen4 Atom Chat represents a massive leap in model scale and conversational capability. Built as a non-reasoning large language model, it&apos;s designed specifically for natural, engaging conversations and content generation at unprecedented scale. At 10X the size of TNSA&apos;s biggest open-weight model NGen3 10B, NGen4 Atom Chat delivers exceptional performance in dialogue, creative writing, and general language understanding with massive-scale AI capabilities.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function NGen4AtomChatPage() {
             <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
               <li>100B+ parameter transformer architecture optimized for conversational AI</li>
               <li>32K token context window for extended dialogue and content generation</li>
-              <li>10X scale of TNSA's biggest open-weight model NGen3 10B</li>
+              <li>10X scale of TNSA&apos;s biggest open-weight model NGen3 10B</li>
               <li>Exceptional performance in natural dialogue and creative writing</li>
             </ul>
           </div>
@@ -54,7 +54,7 @@ export default function NGen4AtomChatPage() {
                     <th className="text-left py-3 px-2 font-semibold">Model</th>
                     <th className="text-right py-3 px-2 font-semibold">MMLU (%)</th>
                     <th className="text-right py-3 px-2 font-semibold">GPQA Diamond (%)</th>
-                    <th className="text-right py-3 px-2 font-semibold">Humanity's Last Exam (%)</th>
+                    <th className="text-right py-3 px-2 font-semibold">Humanity&apos;s Last Exam (%)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -127,7 +127,7 @@ export default function NGen4AtomChatPage() {
               </div>
 
               <div>
-                <div className="text-sm font-medium mb-2">Humanity's Last Exam (%)</div>
+                <div className="text-sm font-medium mb-2">Humanity&apos;s Last Exam (%)</div>
                 <div className="flex gap-1 items-end h-32">
                   <div className="flex-1 bg-blue-600 rounded-t" style={{height: '24%'}}><span className="text-xs text-white p-1">24</span></div>
                   <div className="flex-1 bg-gray-400 rounded-t" style={{height: '15%'}}><span className="text-xs text-white p-1">15</span></div>

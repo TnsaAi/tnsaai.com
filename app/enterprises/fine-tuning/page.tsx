@@ -28,7 +28,7 @@ export default function FineTuningPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Overview.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              Transform TNSA's foundation models into domain-specific AI solutions tailored to your unique business needs. Our custom fine-tuning service enables you to adapt powerful AI models to your specific use cases, data, and requirements.
+              Transform TNSA&apos;s foundation models into domain-specific AI solutions tailored to your unique business needs. Our custom fine-tuning service enables you to adapt powerful AI models to your specific use cases, data, and requirements.
             </p>
           </div>
 

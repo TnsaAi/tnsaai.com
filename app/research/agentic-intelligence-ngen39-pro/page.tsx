@@ -31,7 +31,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Abstract.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-            This paper presents a comprehensive experimental analysis of agentic intelligence capabilities in the NGen3.9-Pro-Agentic model. We investigate how large language models can exhibit autonomous decision-making, goal-oriented behavior, and adaptive planning. Through extensive benchmarking and real-world task evaluation, we demonstrate the model's ability to function as an intelligent agent capable of complex reasoning and multi-step problem solving.
+            This paper presents a comprehensive experimental analysis of agentic intelligence capabilities in the NGen3.9-Pro-Agentic model. We investigate how large language models can exhibit autonomous decision-making, goal-oriented behavior, and adaptive planning. Through extensive benchmarking and real-world task evaluation, we demonstrate the model&apos;s ability to function as an intelligent agent capable of complex reasoning and multi-step problem solving.
             </p>
           </div>
 

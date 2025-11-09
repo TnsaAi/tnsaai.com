@@ -46,7 +46,7 @@ export default function CareersPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Join Our Team.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              Help us build the future of artificial intelligence. We're looking for passionate individuals who want to make a difference in advancing AI technology for humanity.
+              Help us build the future of artificial intelligence. We&apos;re looking for passionate individuals who want to make a difference in advancing AI technology for humanity.
             </p>
           </div>
 

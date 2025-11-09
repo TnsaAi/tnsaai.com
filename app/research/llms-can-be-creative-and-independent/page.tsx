@@ -29,7 +29,7 @@ export default function PaperPage() {
           <div>
             <h2 className="text-2xl text-black mb-4">Abstract.</h2>
             <p className="text-base text-gray-700 leading-relaxed">
-              TNSA AI's research introduces AutoPA (Autoregressive Generation with Full Prompt Attention), a groundbreaking framework that redefines how Large Language Models (LLMs) handle context. Traditional autoregressive models predict text one token at a time using only recent tokens, which can cause repetition, rigidity, and loss of thematic flow. AutoPA solves this by allowing the model to attend to the entire prompt at every generation step, enabling richer, more coherent, and contextually aware outputs.
+              TNSA AI&apos;s research introduces AutoPA (Autoregressive Generation with Full Prompt Attention), a groundbreaking framework that redefines how Large Language Models (LLMs) handle context. Traditional autoregressive models predict text one token at a time using only recent tokens, which can cause repetition, rigidity, and loss of thematic flow. AutoPA solves this by allowing the model to attend to the entire prompt at every generation step, enabling richer, more coherent, and contextually aware outputs.
             </p>
           </div>
 
@@ -38,7 +38,7 @@ export default function PaperPage() {
             <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
               <li>Full Prompt Attention: Maintains global context, improving narrative consistency and thematic alignment.</li>
               <li>Adaptive Attention & Memory: Dynamically balances local and global context for fluid text generation.</li>
-              <li>Controlled Decoding: Ensures outputs remain aligned with the original prompt's structure and intent.</li>
+              <li>Controlled Decoding: Ensures outputs remain aligned with the original prompt&apos;s structure and intent.</li>
             </ul>
           </div>
 

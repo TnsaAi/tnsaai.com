@@ -45,7 +45,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">GensChat.</h2>
             <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
-              <li>India's own conversational AI platform</li>
+              <li>India&apos;s own conversational AI platform</li>
               <li>Support for 22+ Indian languages</li>
               <li>Free access for all users</li>
               <li>Privacy-first design with secure conversations</li>

@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Our Story.</h2>
             <p className="text-base text-gray-700 leading-relaxed mb-4">
-              TNSA AI was founded in 2021 by Thishyaketh Abimalla and Nachiketh Abimalla with a bold mission — to make India the global leader in Artificial Intelligence and pioneer the world's first AGI and Quantum Intelligence systems.
+              TNSA AI was founded in 2021 by Thishyaketh Abimalla and Nachiketh Abimalla with a bold mission — to make India the global leader in Artificial Intelligence and pioneer the world&apos;s first AGI and Quantum Intelligence systems.
             </p>
             <p className="text-base text-gray-700 leading-relaxed">
               Built without reliance on foreign core technology, TNSA develops foundational models, multimodal systems, and advanced AI frameworks. What began as an independent research initiative has evolved into a global AI company.

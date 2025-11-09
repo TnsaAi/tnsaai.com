@@ -45,7 +45,7 @@ export default function PaperPage() {
           <div className="mb-16">
             <h2 className="text-2xl text-gray-900 mb-4">Building Agents with NGen.</h2>
             <ul className="list-disc list-inside text-base text-gray-700 leading-relaxed space-y-2">
-              <li>Leveraging NGen's advanced reasoning capabilities</li>
+              <li>Leveraging NGen&apos;s advanced reasoning capabilities</li>
               <li>Implementing tool use and function calling</li>
               <li>Managing multi-step agent workflows</li>
               <li>Handling context and memory in agent systems</li>
