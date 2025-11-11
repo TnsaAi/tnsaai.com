@@ -5,7 +5,7 @@ import slugify from 'slugify';
 
 export async function POST(req: NextRequest) {
   try {
-    const { title, content, contentType, tags, date, img } = await req.json();
+    const { title, content, contentType, tags, date, img, slug } = await req.json();
 
     if (!title || !content || !contentType) {
       return NextResponse.json({ message: 'Missing required fields' }, { status: 400 });
@@ -23,9 +23,9 @@ export async function POST(req: NextRequest) {
       items = JSON.parse(fileContent);
     }
 
-    const slug = slugify(title, { lower: true, strict: true });
+    const finalSlug = slug ? slugify(slug, { lower: true, strict: true }) : slugify(title, { lower: true, strict: true });
     const newDate = date ? new Date(date).toISOString() : new Date().toISOString();
-    items.push({ title, content, tags, date: newDate, slug, img });
+    items.push({ title, content, tags, date: newDate, slug: finalSlug, img });
     fs.writeFileSync(filePath, JSON.stringify(items, null, 2));
 
     return NextResponse.json({ message: 'Content added successfully' });

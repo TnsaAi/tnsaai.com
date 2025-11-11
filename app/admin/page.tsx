@@ -23,13 +23,14 @@ export default function AdminPage() {
   const [tags, setTags] = useState('');
   const [date, setDate] = useState<Date | undefined>(new Date());
   const [img, setImg] = useState('');
+  const [slug, setSlug] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const response = await fetch('/api/admin', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ title, content, contentType, tags: tags.split(','), date, img }),
+      body: JSON.stringify({ title, content, contentType, tags: tags.split(','), date, img, slug }),
     });
     if (response.ok) {
       alert('Content added successfully!');
@@ -38,6 +39,7 @@ export default function AdminPage() {
       setTags('');
       setDate(new Date());
       setImg('');
+      setSlug('');
     } else {
       alert('Failed to add content.');
     }
@@ -57,7 +59,7 @@ export default function AdminPage() {
                 <SelectTrigger id="contentType">
                   <SelectValue placeholder="Select content type" />
                 </SelectTrigger>
-                <SelectContent className="bg-white">
+                <SelectContent className="bg-white text-black">
                   <SelectItem value="model">Model</SelectItem>
                   <SelectItem value="research">Research Paper</SelectItem>
                   <SelectItem value="news">News</SelectItem>
@@ -71,6 +73,14 @@ export default function AdminPage() {
                 id="title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="slug">URL Suffix</Label>
+              <Input
+                id="slug"
+                value={slug}
+                onChange={(e) => setSlug(e.target.value)}
               />
             </div>
             <div className="space-y-2">
