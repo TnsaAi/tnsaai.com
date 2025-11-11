@@ -45,7 +45,7 @@ export default function AdminPage() {
 
   return (
     <div className="container mx-auto p-4">
-      <Card>
+      <Card className="text-black">
         <CardHeader>
           <CardTitle>Admin Panel</CardTitle>
         </CardHeader>
@@ -57,7 +57,7 @@ export default function AdminPage() {
                 <SelectTrigger id="contentType">
                   <SelectValue placeholder="Select content type" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-white">
                   <SelectItem value="model">Model</SelectItem>
                   <SelectItem value="research">Research Paper</SelectItem>
                   <SelectItem value="news">News</SelectItem>
@@ -96,7 +96,7 @@ export default function AdminPage() {
                     {date ? format(date, "PPP") : <span>Pick a date</span>}
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-auto p-0">
+                <PopoverContent className="w-auto p-0 bg-white">
                   <Calendar
                     mode="single"
                     selected={date}
