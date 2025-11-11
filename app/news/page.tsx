@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 
-interface Model {
+interface News {
   title: string;
   content: string;
   tags: string[];
@@ -10,25 +10,25 @@ interface Model {
   slug: string;
 }
 
-export default function ModelsPage() {
-  const filePath = path.join(process.cwd(), 'papers', 'model.json');
-  let models: Model[] = [];
+export default function NewsPage() {
+  const filePath = path.join(process.cwd(), 'papers', 'news.json');
+  let news: News[] = [];
   if (fs.existsSync(filePath)) {
     const fileContent = fs.readFileSync(filePath, 'utf-8');
-    models = JSON.parse(fileContent);
+    news = JSON.parse(fileContent);
   }
 
   return (
     <div className="container mx-auto p-4 text-white">
-      <h1 className="text-3xl font-bold mb-6">Models</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {models.map((model, index) => (
-          <Link href={`/models/${model.slug}`} key={index}>
+      <h1 className="text-3xl font-bold mb-6">News</h1>
+      <div className="space-y-6">
+        {news.map((item, index) => (
+          <Link href={`/news/${item.slug}`} key={index}>
             <div className="block p-6 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200">
-              <h2 className="text-2xl font-semibold mb-2">{model.title}</h2>
-              <p className="text-gray-400 mb-4">{new Date(model.date).toLocaleDateString()}</p>
+              <h2 className="text-2xl font-semibold mb-2">{item.title}</h2>
+              <p className="text-gray-400 mb-4">{new Date(item.date).toLocaleDateString()}</p>
               <div className="flex flex-wrap gap-2">
-                {model.tags.map((tag, i) => (
+                {item.tags.map((tag, i) => (
                   <span key={i} className="px-2 py-1 bg-gray-700 text-gray-300 rounded-md text-sm">
                     {tag}
                   </span>
