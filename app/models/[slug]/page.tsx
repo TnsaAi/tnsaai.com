@@ -3,6 +3,8 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 interface Model {
   title: string;
@@ -44,20 +46,24 @@ export default function ModelPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="container mx-auto p-4 text-white">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4">{model.title}</h1>
-        <p className="text-gray-400 mb-6">{new Date(model.date).toLocaleDateString()}</p>
-        <div className="prose prose-invert lg:prose-xl">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{model.content}</ReactMarkdown>
-        </div>
-        <div className="mt-8 flex flex-wrap gap-2">
-          {model.tags.map((tag, i) => (
-            <span key={i} className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
+      <Card className="bg-gray-900 border-gray-800">
+        <CardHeader>
+          <CardTitle className="text-4xl font-bold">{model.title}</CardTitle>
+          <p className="text-gray-400 pt-2">{new Date(model.date).toLocaleDateString()}</p>
+        </CardHeader>
+        <CardContent>
+          <div className="prose prose-invert lg:prose-xl max-w-none">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{model.content}</ReactMarkdown>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-2">
+            {model.tags.map((tag, i) => (
+              <Badge key={i} variant="secondary" className="bg-gray-800 text-gray-300">
+                {tag}
+              </Badge>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }

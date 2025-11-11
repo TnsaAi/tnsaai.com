@@ -3,6 +3,12 @@
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 
 export default function AdminPage() {
   const [content, setContent] = useState('');
@@ -29,79 +35,68 @@ export default function AdminPage() {
 
   return (
     <div className="container mx-auto p-4 text-white">
-      <h1 className="text-2xl font-bold mb-4">Admin Panel</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="contentType" className="block text-sm font-medium">
-            Content Type
-          </label>
-          <select
-            id="contentType"
-            value={contentType}
-            onChange={(e) => setContentType(e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-          >
-            <option value="model">Model</option>
-            <option value="research">Research Paper</option>
-            <option value="news">News</option>
-            <option value="job">Job</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="title" className="block text-sm font-medium">
-            Title
-          </label>
-          <input
-            type="text"
-            id="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-          />
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-            <label htmlFor="content" className="block text-sm font-medium">
-              Content (Markdown supported)
-            </label>
-            <textarea
-              id="content"
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              rows={20}
-              className="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium">
-              Preview
-            </label>
-            <div className="mt-1 p-2 block w-full rounded-md border border-gray-600 bg-gray-800 shadow-sm h-[410px] overflow-y-auto prose prose-invert">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {content}
-              </ReactMarkdown>
+      <Card className="bg-gray-900 border-gray-800">
+        <CardHeader>
+          <CardTitle>Admin Panel</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="space-y-2">
+              <Label htmlFor="contentType">Content Type</Label>
+              <Select onValueChange={setContentType} defaultValue={contentType}>
+                <SelectTrigger id="contentType" className="bg-gray-800 border-gray-700">
+                  <SelectValue placeholder="Select content type" />
+                </SelectTrigger>
+                <SelectContent className="bg-gray-800 text-white">
+                  <SelectItem value="model">Model</SelectItem>
+                  <SelectItem value="research">Research Paper</SelectItem>
+                  <SelectItem value="news">News</SelectItem>
+                  <SelectItem value="job">Job</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
-          </div>
-        </div>
-        <div>
-          <label htmlFor="tags" className="block text-sm font-medium">
-            Tags (comma-separated)
-          </label>
-          <input
-            type="text"
-            id="tags"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-          />
-        </div>
-        <button
-          type="submit"
-          className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        >
-          Add Content
-        </button>
-      </form>
+            <div className="space-y-2">
+              <Label htmlFor="title">Title</Label>
+              <Input
+                id="title"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                className="bg-gray-800 border-gray-700"
+              />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="content">Content (Markdown supported)</Label>
+                <Textarea
+                  id="content"
+                  value={content}
+                  onChange={(e) => setContent(e.target.value)}
+                  rows={20}
+                  className="bg-gray-800 border-gray-700"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>Preview</Label>
+                <div className="mt-1 p-4 rounded-md border border-gray-700 bg-gray-800 h-[450px] overflow-y-auto prose prose-invert">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {content}
+                  </ReactMarkdown>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="tags">Tags (comma-separated)</Label>
+              <Input
+                id="tags"
+                value={tags}
+                onChange={(e) => setTags(e.target.value)}
+                className="bg-gray-800 border-gray-700"
+              />
+            </div>
+            <Button type="submit">Add Content</Button>
+          </form>
+        </CardContent>
+      </Card>
     </div>
   );
 }
